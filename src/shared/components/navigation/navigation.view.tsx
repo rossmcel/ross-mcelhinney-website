@@ -23,7 +23,7 @@ export const NavigationView: React.FC = () => {
       <Flex align="center" mr={5}>
         <Box boxSize="32px" mr="0.8rem" mt="-0.7rem">
           <NavLink to="/">
-            <Image src="https://i.ibb.co/KmbKCqs/blue-pin-point-icon-isolated-260nw-1709537368.jpg" />
+            <Image src="blank.jpg" />
           </NavLink>
         </Box>
 
@@ -54,6 +54,7 @@ export const NavigationView: React.FC = () => {
         flexDirection="row-reverse"
       >
         <MenuItems menuItemLink="/Community">Contact Me</MenuItems>
+        <MenuItems menuItemLink="/AboutMe">About Me</MenuItems>
         <MenuItems menuItemLink="/Projects">My Projects</MenuItems>
         <MenuItems menuItemLink="/">Home</MenuItems>
       </Box>
