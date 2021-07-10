@@ -8,6 +8,8 @@ import {
   ButtonNext,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 
 interface SliderViewProps {
   totalSlides: number;
@@ -28,7 +30,9 @@ export const SliderView: React.FC<SliderViewProps> = ({
       <Center>
         <Flex direction="row" minH="15rem">
           <Box mr="5rem" mt="auto" mb="auto">
-            <ButtonBack>Back</ButtonBack>
+            <ButtonBack>
+              <ArrowBackIcon />
+            </ButtonBack>
           </Box>
           <Slider>
             <Box minW="50rem" minH="18rem" pt="1rem" textAlign="center">
@@ -36,7 +40,9 @@ export const SliderView: React.FC<SliderViewProps> = ({
             </Box>
           </Slider>
           <Box ml="5rem" mt="auto" mb="auto">
-            <ButtonNext>Next</ButtonNext>
+            <ButtonNext>
+              <ArrowForwardIcon />
+            </ButtonNext>
           </Box>
         </Flex>
       </Center>
