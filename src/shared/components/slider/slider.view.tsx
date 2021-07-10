@@ -17,20 +17,27 @@ export const SliderView: React.FC = () => {
       naturalSlideHeight={5}
       totalSlides={3}
       orientation="horizontal"
+      isPlaying={true}
     >
       <Center>
-        <Flex direction="row" h="20rem">
-          <Box mr="5rem">
+        <Flex direction="row" minH="15rem">
+          <Box mr="5rem" mt="auto" mb="auto">
             <ButtonBack>Back</ButtonBack>
           </Box>
           <Slider>
-            <Box minW="50rem">
+            <Box
+              minW="50rem"
+              minH="15rem"
+              pt="1rem"
+              textAlign="center"
+              bgColor="lightgrey"
+            >
               <Slide index={0}>I am the first Slide.</Slide>
               <Slide index={1}>I am the second Slide.</Slide>
               <Slide index={2}>I am the third Slide.</Slide>
             </Box>
           </Slider>
-          <Box ml="5rem">
+          <Box ml="5rem" mt="auto" mb="auto">
             <ButtonNext>Next</ButtonNext>
           </Box>
         </Flex>
