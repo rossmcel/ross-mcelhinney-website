@@ -7,6 +7,7 @@ import { HorizontalListBordered } from "../../shared/components/horizontal-list-
 import { ImageCaption } from "../../shared/components/image-caption";
 import { VerticalList } from "../../shared/components/vertical-list";
 import { EventCard } from "../../shared/components/event-card";
+import { Slider } from "../../shared/components/slider";
 
 export const Home: React.FC = () => {
   return (
@@ -25,42 +26,8 @@ export const Home: React.FC = () => {
         button3Text="LinkedIn"
       />
 
-      <Box
-        display={{ base: "block", md: "initial" }}
-        w="95%"
-        border={{ base: "1px solid lightgrey", md: "none" }}
-        borderRadius="lg"
-        marginX="2.5%"
-      >
-        <Center mt={{ base: "1.5rem", md: "5rem" }}>
-          <Heading as="h3" size="lg" letterSpacing="-.1rem">
-            Our Goals
-          </Heading>
-        </Center>
-
-        <HorizontalList>
-          <Card
-            title="Learn"
-            image="https://i.ibb.co/pybZdJN/learn.png"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiubaseod tempor incididunt ut
-             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat"
-          />
-          <Card
-            title="Build"
-            image="https://i.ibb.co/vwHFcXh/build.png"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiubaseod tempor incididunt ut
-             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat"
-          />
-          <Card
-            title="Grow"
-            image="https://i.ibb.co/RT5920b/grow.png"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiubaseod tempor incididunt ut
-             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat"
-          />
-        </HorizontalList>
+      <Box>
+        <Slider />
       </Box>
 
       <Box
