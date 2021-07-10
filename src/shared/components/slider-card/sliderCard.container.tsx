@@ -1,6 +1,5 @@
 import React from "react";
 import { SliderCardView } from "./sliderCard.view";
-import { Sizes } from "../../../design/types";
 
 interface SliderCardProps {
   index: number;
@@ -14,8 +13,6 @@ interface SliderCardProps {
   image2?: string;
   image3?: string;
   image4?: string;
-  textWidth?: Sizes;
-  headingSize?: string;
 }
 
 export const SliderCard: React.FC<SliderCardProps> = ({
@@ -30,38 +27,7 @@ export const SliderCard: React.FC<SliderCardProps> = ({
   image2 = undefined,
   image3 = undefined,
   image4 = undefined,
-  textWidth = Sizes.BASE,
-  headingSize = "md",
 }) => {
-  let widthSize = 1;
-  switch (textWidth) {
-    case Sizes.BASE:
-      widthSize = 30;
-      break;
-    case Sizes.XSMALL:
-      widthSize = 15;
-      break;
-    case Sizes.SMALL:
-      widthSize = 20;
-      break;
-    case Sizes.MEDIUM:
-      widthSize = 25;
-      break;
-    case Sizes.LARGE:
-      widthSize = 35;
-      break;
-    case Sizes.XL:
-      widthSize = 45;
-      break;
-    default:
-      break;
-  }
-
-  // Used to align the date with the heading when the heading is customized
-  let dateMargin = 0;
-  if (headingSize !== "md") {
-    dateMargin = 0.5;
-  }
   return (
     <SliderCardView
       index={index}
@@ -75,9 +41,6 @@ export const SliderCard: React.FC<SliderCardProps> = ({
       image2={image2}
       image3={image3}
       image4={image4}
-      textWidth={widthSize}
-      headingSize={headingSize}
-      dateMargin={dateMargin}
     />
   );
 };

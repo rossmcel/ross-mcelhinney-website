@@ -28,6 +28,14 @@ export const Home: React.FC = () => {
       />
 
       <Box>
+        <Center
+          mt={{ base: "1.5rem", md: "5rem" }}
+          mb={{ base: "1.5rem", md: "2rem" }}
+        >
+          <Heading as="h3" size="lg" letterSpacing="-.1rem">
+            My Projects
+          </Heading>
+        </Center>
         <Slider totalSlides={3}>
           <SliderCard
             index={0}
@@ -35,7 +43,7 @@ export const Home: React.FC = () => {
             date="15/3/2021"
             text="Lorem ipsum......"
             buttonLink="#whatever"
-            buttonText="Register Now"
+            buttonText="See More"
             imagesTitle="Tech"
             image1="https://i.ibb.co/7YyXpYV/javasript.png"
             image2="https://i.ibb.co/m9M2ZK2/react.png"
@@ -46,10 +54,12 @@ export const Home: React.FC = () => {
             date="15/3/2021"
             text="Lorem ipsum......"
             buttonLink="#whatever"
-            buttonText="Register Now"
+            buttonText="See More"
             imagesTitle="Tech"
             image1="https://i.ibb.co/7YyXpYV/javasript.png"
             image2="https://i.ibb.co/m9M2ZK2/react.png"
+            image3="https://i.ibb.co/8NjQkG5/tenserflow.png"
+            image4="https://i.ibb.co/MDMnL5f/python.png"
           />
           <SliderCard
             index={2}
@@ -57,7 +67,7 @@ export const Home: React.FC = () => {
             date="15/3/2021"
             text="Lorem ipsum......"
             buttonLink="#whatever"
-            buttonText="Register Now"
+            buttonText="See More"
             imagesTitle="Tech"
             image1="https://i.ibb.co/7YyXpYV/javasript.png"
             image2="https://i.ibb.co/m9M2ZK2/react.png"

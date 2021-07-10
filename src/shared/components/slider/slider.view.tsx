@@ -31,13 +31,7 @@ export const SliderView: React.FC<SliderViewProps> = ({
             <ButtonBack>Back</ButtonBack>
           </Box>
           <Slider>
-            <Box
-              minW="50rem"
-              minH="15rem"
-              pt="1rem"
-              textAlign="center"
-              bgColor="lightgrey"
-            >
+            <Box minW="50rem" minH="18rem" pt="1rem" textAlign="center">
               {children}
             </Box>
           </Slider>

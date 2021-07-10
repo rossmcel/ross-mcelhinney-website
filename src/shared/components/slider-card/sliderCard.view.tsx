@@ -25,9 +25,6 @@ interface SliderCardViewProps {
   image2?: string;
   image3?: string;
   image4?: string;
-  textWidth: number;
-  headingSize: string;
-  dateMargin: number;
 }
 
 export const SliderCardView: React.FC<SliderCardViewProps> = ({
@@ -42,34 +39,28 @@ export const SliderCardView: React.FC<SliderCardViewProps> = ({
   image2 = undefined,
   image3 = undefined,
   image4 = undefined,
-  textWidth,
-  headingSize,
-  dateMargin,
 }) => {
   return (
     <Slide index={index}>
       <Flex
         direction="row"
-        mt={{ base: "2rem", sm: "2rem" }}
-        mb={{ base: "2rem", sm: "4rem" }}
-        pb={{ base: "1rem", sm: "none" }}
-        borderBottom={{ base: "1px lightgrey solid", sm: "none" }}
+        ml="1rem"
+        mr="1rem"
+        mt={{ base: "1rem", sm: "1rem" }}
+        mb={{ base: "1rem", sm: "1rem" }}
+        py="1rem"
+        px="2rem"
+        backgroundColor="#e4ebf5"
+        borderRadius="2rem"
       >
-        <Flex direction="column" minW="70%" mr="5%">
-          <Flex direction="row" mb="1rem">
-            <Heading
-              as="h5"
-              size={headingSize}
-              letterSpacing="-.1rem"
-              mr="1rem"
-            >
+        <Flex direction="column" minW="70%" ml="0%" mr="5%" textAlign="left">
+          <Flex direction="column" mb="1rem">
+            <Heading as="h5" size="lg" letterSpacing="-.1rem" mr="1rem">
               {title}
             </Heading>
-            <Text size="md" mt={`${dateMargin}rem`}>
-              {date}
-            </Text>
+            <Text size="md">{date}</Text>
           </Flex>
-          <Flex direction="column" maxW={`${textWidth}rem`}>
+          <Flex direction="column" maxW="30rem">
             <Text mb="1rem">{text}</Text>
             <a href={buttonLink}>
               <Button
@@ -84,7 +75,7 @@ export const SliderCardView: React.FC<SliderCardViewProps> = ({
           </Flex>
         </Flex>
 
-        <Flex direction="column" ml="auto">
+        <Flex direction="column" ml="auto" textAlign="left">
           <Heading as="h6" size="md" letterSpacing="-.1rem" alignSelf="right">
             {imagesTitle}
           </Heading>
