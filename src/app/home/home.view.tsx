@@ -8,6 +8,7 @@ import { ImageCaption } from "../../shared/components/image-caption";
 import { VerticalList } from "../../shared/components/vertical-list";
 import { EventCard } from "../../shared/components/event-card";
 import { Slider } from "../../shared/components/slider";
+import { SliderCard } from "../../shared/components/slider-card";
 
 export const Home: React.FC = () => {
   return (
@@ -27,7 +28,41 @@ export const Home: React.FC = () => {
       />
 
       <Box>
-        <Slider />
+        <Slider totalSlides={3}>
+          <SliderCard
+            index={0}
+            title="Web Dev Workshop"
+            date="15/3/2021"
+            text="Lorem ipsum......"
+            buttonLink="#whatever"
+            buttonText="Register Now"
+            imagesTitle="Tech"
+            image1="https://i.ibb.co/7YyXpYV/javasript.png"
+            image2="https://i.ibb.co/m9M2ZK2/react.png"
+          />
+          <SliderCard
+            index={1}
+            title="Web Dev Workshop"
+            date="15/3/2021"
+            text="Lorem ipsum......"
+            buttonLink="#whatever"
+            buttonText="Register Now"
+            imagesTitle="Tech"
+            image1="https://i.ibb.co/7YyXpYV/javasript.png"
+            image2="https://i.ibb.co/m9M2ZK2/react.png"
+          />
+          <SliderCard
+            index={2}
+            title="Web Dev Workshop"
+            date="15/3/2021"
+            text="Lorem ipsum......"
+            buttonLink="#whatever"
+            buttonText="Register Now"
+            imagesTitle="Tech"
+            image1="https://i.ibb.co/7YyXpYV/javasript.png"
+            image2="https://i.ibb.co/m9M2ZK2/react.png"
+          />
+        </Slider>
       </Box>
 
       <Box

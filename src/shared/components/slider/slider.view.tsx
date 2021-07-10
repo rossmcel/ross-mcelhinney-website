@@ -4,18 +4,24 @@ import { Box, Flex, Center } from "@chakra-ui/react";
 import {
   CarouselProvider,
   Slider,
-  Slide,
   ButtonBack,
   ButtonNext,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
-export const SliderView: React.FC = () => {
+interface SliderViewProps {
+  totalSlides: number;
+}
+
+export const SliderView: React.FC<SliderViewProps> = ({
+  children,
+  totalSlides,
+}) => {
   return (
     <CarouselProvider
       naturalSlideWidth={80}
       naturalSlideHeight={5}
-      totalSlides={3}
+      totalSlides={totalSlides}
       orientation="horizontal"
       isPlaying={true}
     >
@@ -32,9 +38,7 @@ export const SliderView: React.FC = () => {
               textAlign="center"
               bgColor="lightgrey"
             >
-              <Slide index={0}>I am the first Slide.</Slide>
-              <Slide index={1}>I am the second Slide.</Slide>
-              <Slide index={2}>I am the third Slide.</Slide>
+              {children}
             </Box>
           </Slider>
           <Box ml="5rem" mt="auto" mb="auto">
