@@ -34,9 +34,9 @@ export const Home: React.FC = () => {
         <Slider totalSlides={3}>
           <SliderCard
             index={0}
-            title="Web Dev Workshop"
-            date="15/3/2021"
-            text="Lorem ipsum......"
+            title="Personal Website"
+            date="Summer 2021"
+            text="Created rossmcelhinney.com, intended to display my professional information. Made with React JS"
             buttonLink="#whatever"
             buttonText="See More"
             imagesTitle="Tech"
