@@ -1,14 +1,9 @@
 import React from "react";
-import { Box, Center, Heading } from "@chakra-ui/react";
+import { Box, Center, Heading, Button, Text } from "@chakra-ui/react";
 import { ImageText } from "../../shared/components/image-text";
-import { HorizontalList } from "../../shared/components/horizontal-list";
-import { Card } from "../../shared/components/card";
-import { HorizontalListBordered } from "../../shared/components/horizontal-list-bordered";
-import { ImageCaption } from "../../shared/components/image-caption";
-import { VerticalList } from "../../shared/components/vertical-list";
-import { EventCard } from "../../shared/components/event-card";
 import { Slider } from "../../shared/components/slider";
 import { SliderCard } from "../../shared/components/slider-card";
+import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 
 export const Home: React.FC = () => {
   return (
@@ -73,6 +68,19 @@ export const Home: React.FC = () => {
             image2="https://i.ibb.co/m9M2ZK2/react.png"
           />
         </Slider>
+        <Center
+          mt={{ base: "0.5rem", md: "-1rem" }}
+          mb={{ base: "0.5rem", md: "1rem" }}
+        >
+          <Button
+            bg="lightgrey"
+            color="black"
+            w={{ base: "20%", sm: "10%" }}
+            _hover={{ bg: "#3f47c4" }}
+          >
+            <Text mr="0.2rem">See All</Text> <ArrowRightAltIcon />
+          </Button>
+        </Center>
       </Box>
     </Box>
   );

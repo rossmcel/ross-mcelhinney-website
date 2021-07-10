@@ -1,7 +1,15 @@
 // Component that renders x number of sections aligned vertically
 
-import React from 'react';
-import { Box, Heading, Flex, Image, Text, Button, Center } from '@chakra-ui/react';
+import React from "react";
+import {
+  Box,
+  Heading,
+  Flex,
+  Image,
+  Text,
+  Button,
+  Center,
+} from "@chakra-ui/react";
 
 interface EventCardViewProps {
   title: string;
@@ -37,10 +45,10 @@ export const EventCardView: React.FC<EventCardViewProps> = ({
   return (
     <Flex
       direction="row"
-      mt={{ base: '2rem', sm: '2rem' }}
-      mb={{ base: '2rem', sm: '4rem' }}
-      pb={{ base: '1rem', sm: 'none' }}
-      borderBottom={{ base: '1px lightgrey solid', sm: 'none' }}
+      mt={{ base: "2rem", sm: "2rem" }}
+      mb={{ base: "2rem", sm: "2rem" }}
+      pb={{ base: "1rem", sm: "none" }}
+      borderBottom={{ base: "1px lightgrey solid", sm: "none" }}
     >
       <Flex direction="column" minW="70%" mr="5%">
         <Flex direction="row" mb="1rem">
@@ -54,7 +62,12 @@ export const EventCardView: React.FC<EventCardViewProps> = ({
         <Flex direction="column" maxW={`${textWidth}rem`}>
           <Text mb="1rem">{text}</Text>
           <a href={buttonLink}>
-            <Button bg="blue" color="white" w={{ base: '80%', sm: '40%' }} _hover={{ bg: '#3f47c4' }}>
+            <Button
+              bg="blue"
+              color="white"
+              w={{ base: "80%", sm: "40%" }}
+              _hover={{ bg: "#3f47c4" }}
+            >
               {buttonText}
             </Button>
           </a>
@@ -65,22 +78,22 @@ export const EventCardView: React.FC<EventCardViewProps> = ({
         <Heading as="h6" size="md" letterSpacing="-.1rem" alignSelf="right">
           {imagesTitle}
         </Heading>
-        <Flex direction="row" mt={{ base: '2.5rem', sm: '1rem' }}>
+        <Flex direction="row" mt={{ base: "2.5rem", sm: "1rem" }}>
           <Center>
-            <Box boxSize={{ base: '48px', sm: '64px' }}>
+            <Box boxSize={{ base: "48px", sm: "64px" }}>
               <Image src={image1} />
             </Box>
-            <Box boxSize={{ base: '48px', sm: '64px' }}>
+            <Box boxSize={{ base: "48px", sm: "64px" }}>
               <Image src={image2} />
             </Box>
           </Center>
         </Flex>
         <Flex direction="row">
           <Center>
-            <Box boxSize={{ base: '48px', sm: '64px' }}>
+            <Box boxSize={{ base: "48px", sm: "64px" }}>
               <Image src={image3} />
             </Box>
-            <Box boxSize={{ base: '48px', sm: '64px' }}>
+            <Box boxSize={{ base: "48px", sm: "64px" }}>
               <Image src={image4} />
             </Box>
           </Center>
