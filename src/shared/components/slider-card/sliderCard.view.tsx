@@ -50,8 +50,8 @@ export const SliderCardView: React.FC<SliderCardViewProps> = ({
         mb={{ base: "1rem", sm: "1rem" }}
         py="1rem"
         px="2rem"
-        backgroundColor="#e4ebf5"
-        borderRadius="2rem"
+        border="1px lightgrey solid"
+        borderRadius="1rem"
       >
         <Flex direction="column" minW="70%" ml="0%" mr="5%" textAlign="left">
           <Flex direction="column" mb="1rem">
