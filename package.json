@@ -14,10 +14,14 @@
     "framer-motion": "^4.1.17",
     "pure-react-carousel": "^1.27.6",
     "react": "^17.0.2",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-animate-text": "^0.4.0",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-slick": "^0.28.1",
+    "react-syntax-highlighter": "^15.4.3",
+    "rxjs": "^7.2.0",
     "typescript": "^4.3.5",
     "web-vitals": "^1.0.1"
   },
@@ -47,8 +51,11 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.14",
+    "@types/react-animate-on-scroll": "^2.1.3",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.1.8",
-    "@types/react-slick": "^0.23.5"
+    "@types/react-slick": "^0.23.5",
+    "@types/react-syntax-highlighter": "^13.5.2",
+    "react-reveal": "^1.2.2"
   }
 }
