@@ -4,6 +4,10 @@ import { ImageText } from "../../shared/components/image-text";
 import { Slider } from "../../shared/components/slider";
 import { SliderCard } from "../../shared/components/slider-card";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
+import phpLogo from "../../phpLogo.png";
+import MySQLLogo from "../../MySQLLogo.png";
+import htmlLogo from "../../htmlLogo.png";
+import cssLogo from "../../cssLogo.png";
 
 export const Home: React.FC = () => {
   return (
@@ -51,10 +55,10 @@ export const Home: React.FC = () => {
             buttonLink="#whatever"
             buttonText="See More"
             imagesTitle="Tech"
-            image1="https://i.ibb.co/7YyXpYV/javasript.png"
-            image2="https://i.ibb.co/m9M2ZK2/react.png"
-            image3="https://i.ibb.co/8NjQkG5/tenserflow.png"
-            image4="https://i.ibb.co/MDMnL5f/python.png"
+            image1={phpLogo}
+            image2={cssLogo}
+            image3={MySQLLogo}
+            image4={htmlLogo}
           />
           <SliderCard
             index={2}

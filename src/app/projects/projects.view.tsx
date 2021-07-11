@@ -32,7 +32,7 @@ export const ProjectsView: React.FC = () => {
             Here you can see projects that I have created
           </Text>
           <Text fontSize="lg" textAlign="justify">
-            My aim with these Projects is to both improve and expand my
+            My aim with these projects is to both improve and expand my
             programming skills & to provide solutions to interesting problems I
             have come across in the world
           </Text>
