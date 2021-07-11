@@ -47,10 +47,10 @@ export const ProjectsView: React.FC = () => {
         mr="5%"
       >
         <Heading as="h3" size="lg" letterSpacing="-.1rem">
-          Personal Wesbite
+          Personal Website
         </Heading>
         <Text color="grey" fontSize="lg">
-          React JS, TypeScript
+          React JS, TypeScript, JavaScript
         </Text>
         <Flex direction="row" mt="1rem" minW="100%" minH="100%">
           <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
@@ -76,10 +76,10 @@ export const ProjectsView: React.FC = () => {
       >
         <Box ml="60%">
           <Heading as="h3" size="lg" letterSpacing="-.1rem">
-            My Projects
+            Web Application Template
           </Heading>
           <Text color="grey" fontSize="lg">
-            React JS, TypeScript
+            PHP, JavaScript, MySQL, HTML, CSS
           </Text>
         </Box>
         <Flex direction="row" mt="1rem" minW="100%" minH="100%">
