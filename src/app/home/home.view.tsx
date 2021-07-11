@@ -45,9 +45,9 @@ export const Home: React.FC = () => {
           />
           <SliderCard
             index={1}
-            title="Web Dev Workshop"
+            title="PHP Web Application Template"
             date="15/3/2021"
-            text="Lorem ipsum......"
+            text="A functioning web application primarily built with PHP as well as other technologies such as MySql, JS, HTML & CSS"
             buttonLink="#whatever"
             buttonText="See More"
             imagesTitle="Tech"
@@ -72,14 +72,16 @@ export const Home: React.FC = () => {
           mt={{ base: "0.5rem", md: "-1rem" }}
           mb={{ base: "0.5rem", md: "1rem" }}
         >
-          <Button
-            bg="lightgrey"
-            color="black"
-            w={{ base: "20%", sm: "10%" }}
-            _hover={{ bg: "#3f47c4" }}
-          >
-            <Text mr="0.2rem">See All</Text> <ArrowRightAltIcon />
-          </Button>
+          <a href="/Projects">
+            <Button
+              bg="lightgrey"
+              color="black"
+              w="100%"
+              _hover={{ bg: "#3f47c4" }}
+            >
+              <Text mr="0.2rem">See All</Text> <ArrowRightAltIcon />
+            </Button>
+          </a>
         </Center>
       </Box>
     </Box>

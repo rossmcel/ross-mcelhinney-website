@@ -29,7 +29,7 @@ export const ProjectsView: React.FC = () => {
       <Center>
         <Flex direction="column" maxW="40%">
           <Text fontSize="lg" textAlign="center" mb="0.7rem">
-            Here you can see some projects that I have created
+            Here you can see projects that I have created
           </Text>
           <Text fontSize="lg" textAlign="justify">
             My aim with these Projects is to both improve and expand my
