@@ -46,14 +46,14 @@ export const ProjectsView: React.FC = () => {
             </SyntaxHighlighter>
           </Box>
         </ScrollAnimation>
-        <Box minW="60%" bgColor="blue">
-          <Text>This is a test</Text>
+        <Box minW="60%">
+          <Text m="1rem">This is a test</Text>
         </Box>
       </Flex>
 
       <Flex mt="5rem" minW="90%" minH="10rem" ml="5%" mr="5%">
-        <Box minW="60%" bgColor="blue">
-          <Text>This is a test</Text>
+        <Box minW="60%">
+          <Text m="1rem">This is a test</Text>
         </Box>
         <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
           <Box minW="40%" minH="10rem" ml="auto" mr="0%">
@@ -71,13 +71,13 @@ export const ProjectsView: React.FC = () => {
             </SyntaxHighlighter>
           </Box>
         </ScrollAnimation>
-        <Box minW="60%" bgColor="blue">
-          <Text>This is a test</Text>
+        <Box minW="60%">
+          <Text m="1rem">This is a test</Text>
         </Box>
       </Flex>
       <Flex mt="5rem" minW="90%" minH="10rem" ml="5%" mr="5%">
-        <Box minW="60%" bgColor="blue">
-          <Text>This is a test</Text>
+        <Box minW="60%">
+          <Text m="1rem">This is a test</Text>
         </Box>
         <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
           <Box minW="40%" minH="10rem" ml="auto" mr="0%">
