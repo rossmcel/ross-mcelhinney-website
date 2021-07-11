@@ -33,59 +33,107 @@ export const ProjectsView: React.FC = () => {
           </Text>
           <Text fontSize="lg" textAlign="justify">
             My aim with these Projects is to both improve and expand my
-            programming skills and to provide solutions to interesting problems
-            I have come across in the world
+            programming skills & to provide solutions to interesting problems I
+            have come across in the world
           </Text>
         </Flex>
       </Center>
-      <Flex mt="5rem" minW="90%" minH="10rem" ml="5%" mr="5%">
-        <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
-          <Box minW="40%" minH="100%" ml="0%" mr="auto">
-            <SyntaxHighlighter language="javascript" style={atomDark}>
-              {codeString}
-            </SyntaxHighlighter>
+      <Flex
+        direction="column"
+        mt="5rem"
+        minW="90%"
+        minH="10rem"
+        ml="5%"
+        mr="5%"
+      >
+        <Heading as="h3" size="lg" letterSpacing="-.1rem">
+          My Projects
+        </Heading>
+        <Flex direction="row" mt="1rem" minW="100%" minH="100%">
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
+            <Box minW="40%" minH="100%" ml="0%" mr="auto">
+              <SyntaxHighlighter language="javascript" style={atomDark}>
+                {codeString}
+              </SyntaxHighlighter>
+            </Box>
+          </ScrollAnimation>
+          <Box minW="60%">
+            <Text m="1rem">This is a test</Text>
           </Box>
-        </ScrollAnimation>
-        <Box minW="60%">
-          <Text m="1rem">This is a test</Text>
-        </Box>
+        </Flex>
       </Flex>
 
-      <Flex mt="5rem" minW="90%" minH="10rem" ml="5%" mr="5%">
-        <Box minW="60%">
-          <Text m="1rem">This is a test</Text>
-        </Box>
-        <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
-          <Box minW="40%" minH="10rem" ml="auto" mr="0%">
-            <SyntaxHighlighter language="javascript" style={atomDark}>
-              {codeString}
-            </SyntaxHighlighter>
+      <Flex
+        direction="column"
+        mt="5rem"
+        minW="90%"
+        minH="10rem"
+        ml="5%"
+        mr="5%"
+      >
+        <Heading as="h3" size="lg" letterSpacing="-.1rem">
+          My Projects
+        </Heading>
+        <Flex direction="row" mt="1rem" minW="100%" minH="100%">
+          <Box minW="60%">
+            <Text m="1rem">This is a test</Text>
           </Box>
-        </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
+            <Box minW="40%" minH="10rem" ml="auto" mr="0%">
+              <SyntaxHighlighter language="javascript" style={atomDark}>
+                {codeString}
+              </SyntaxHighlighter>
+            </Box>
+          </ScrollAnimation>
+        </Flex>
       </Flex>
-      <Flex mt="5rem" minW="90%" minH="10rem" ml="5%" mr="5%">
-        <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
-          <Box minW="40%" minH="10rem" ml="0%" mr="auto">
-            <SyntaxHighlighter language="javascript" style={atomDark}>
-              {codeString}
-            </SyntaxHighlighter>
+      <Flex
+        direction="column"
+        mt="5rem"
+        minW="90%"
+        minH="10rem"
+        ml="5%"
+        mr="5%"
+      >
+        <Heading as="h3" size="lg" letterSpacing="-.1rem">
+          My Projects
+        </Heading>
+        <Flex direction="row" mt="1rem" minW="100%" minH="100%">
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
+            <Box minW="40%" minH="10rem" ml="0%" mr="auto">
+              <SyntaxHighlighter language="javascript" style={atomDark}>
+                {codeString}
+              </SyntaxHighlighter>
+            </Box>
+          </ScrollAnimation>
+          <Box minW="60%">
+            <Text m="1rem">This is a test</Text>
           </Box>
-        </ScrollAnimation>
-        <Box minW="60%">
-          <Text m="1rem">This is a test</Text>
-        </Box>
+        </Flex>
       </Flex>
-      <Flex mt="5rem" minW="90%" minH="10rem" ml="5%" mr="5%">
-        <Box minW="60%">
-          <Text m="1rem">This is a test</Text>
-        </Box>
-        <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
-          <Box minW="40%" minH="10rem" ml="auto" mr="0%">
-            <SyntaxHighlighter language="javascript" style={atomDark}>
-              {codeString}
-            </SyntaxHighlighter>
+      <Flex
+        direction="column"
+        mt="5rem"
+        minW="90%"
+        minH="10rem"
+        ml="5%"
+        mr="5%"
+      >
+        <Heading as="h3" size="lg" letterSpacing="-.1rem">
+          My Projects
+        </Heading>
+        <Flex direction="row" mt="1rem" minW="100%" minH="100%">
+          <Box minW="60%">
+            <Text m="1rem">This is a test</Text>
           </Box>
-        </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
+            <Box minW="40%" minH="10rem" ml="auto" mr="0%">
+              <SyntaxHighlighter language="javascript" style={atomDark}>
+                {codeString}
+              </SyntaxHighlighter>
+            </Box>
+          </ScrollAnimation>
+        </Flex>
       </Flex>
     </Box>
   );
