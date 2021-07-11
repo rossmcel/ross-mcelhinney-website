@@ -47,8 +47,11 @@ export const ProjectsView: React.FC = () => {
         mr="5%"
       >
         <Heading as="h3" size="lg" letterSpacing="-.1rem">
-          My Projects
+          Personal Wesbite
         </Heading>
+        <Text color="grey" fontSize="lg">
+          React JS, TypeScript
+        </Text>
         <Flex direction="row" mt="1rem" minW="100%" minH="100%">
           <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
             <Box minW="40%" minH="100%" ml="0%" mr="auto">
@@ -71,9 +74,14 @@ export const ProjectsView: React.FC = () => {
         ml="5%"
         mr="5%"
       >
-        <Heading as="h3" size="lg" letterSpacing="-.1rem">
-          My Projects
-        </Heading>
+        <Box ml="60%">
+          <Heading as="h3" size="lg" letterSpacing="-.1rem">
+            My Projects
+          </Heading>
+          <Text color="grey" fontSize="lg">
+            React JS, TypeScript
+          </Text>
+        </Box>
         <Flex direction="row" mt="1rem" minW="100%" minH="100%">
           <Box minW="60%">
             <Text m="1rem">This is a test</Text>
@@ -98,6 +106,9 @@ export const ProjectsView: React.FC = () => {
         <Heading as="h3" size="lg" letterSpacing="-.1rem">
           My Projects
         </Heading>
+        <Text color="grey" fontSize="lg">
+          React JS, TypeScript
+        </Text>
         <Flex direction="row" mt="1rem" minW="100%" minH="100%">
           <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
             <Box minW="40%" minH="10rem" ml="0%" mr="auto">
@@ -119,9 +130,14 @@ export const ProjectsView: React.FC = () => {
         ml="5%"
         mr="5%"
       >
-        <Heading as="h3" size="lg" letterSpacing="-.1rem">
-          My Projects
-        </Heading>
+        <Box ml="60%">
+          <Heading as="h3" size="lg" letterSpacing="-.1rem">
+            My Projects
+          </Heading>
+          <Text color="grey" fontSize="lg">
+            React JS, TypeScript
+          </Text>
+        </Box>
         <Flex direction="row" mt="1rem" minW="100%" minH="100%">
           <Box minW="60%">
             <Text m="1rem">This is a test</Text>
