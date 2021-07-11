@@ -38,35 +38,55 @@ export const ProjectsView: React.FC = () => {
           </Text>
         </Flex>
       </Center>
-      <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
-        <Box mt="5rem" w="50rem" minH="10rem" ml="auto" mr="auto">
-          <SyntaxHighlighter language="javascript" style={atomDark}>
-            {codeString}
-          </SyntaxHighlighter>
+      <Flex mt="5rem" minW="90%" minH="10rem" ml="5%" mr="5%">
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
+          <Box minW="40%" minH="100%" ml="0%" mr="auto">
+            <SyntaxHighlighter language="javascript" style={atomDark}>
+              {codeString}
+            </SyntaxHighlighter>
+          </Box>
+        </ScrollAnimation>
+        <Box minW="60%" bgColor="blue">
+          <Text>This is a test</Text>
         </Box>
-      </ScrollAnimation>
+      </Flex>
 
-      <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
-        <Box mt="5rem" w="50rem" minH="10rem" ml="auto" mr="auto">
-          <SyntaxHighlighter language="javascript" style={atomDark}>
-            {codeString}
-          </SyntaxHighlighter>
+      <Flex mt="5rem" minW="90%" minH="10rem" ml="5%" mr="5%">
+        <Box minW="60%" bgColor="blue">
+          <Text>This is a test</Text>
         </Box>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
-        <Box mt="5rem" w="50rem" minH="10rem" ml="auto" mr="auto">
-          <SyntaxHighlighter language="javascript" style={atomDark}>
-            {codeString}
-          </SyntaxHighlighter>
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
+          <Box minW="40%" minH="10rem" ml="auto" mr="0%">
+            <SyntaxHighlighter language="javascript" style={atomDark}>
+              {codeString}
+            </SyntaxHighlighter>
+          </Box>
+        </ScrollAnimation>
+      </Flex>
+      <Flex mt="5rem" minW="90%" minH="10rem" ml="5%" mr="5%">
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
+          <Box minW="40%" minH="10rem" ml="0%" mr="auto">
+            <SyntaxHighlighter language="javascript" style={atomDark}>
+              {codeString}
+            </SyntaxHighlighter>
+          </Box>
+        </ScrollAnimation>
+        <Box minW="60%" bgColor="blue">
+          <Text>This is a test</Text>
         </Box>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
-        <Box mt="5rem" w="50rem" minH="10rem" ml="auto" mr="auto">
-          <SyntaxHighlighter language="javascript" style={atomDark}>
-            {codeString}
-          </SyntaxHighlighter>
+      </Flex>
+      <Flex mt="5rem" minW="90%" minH="10rem" ml="5%" mr="5%">
+        <Box minW="60%" bgColor="blue">
+          <Text>This is a test</Text>
         </Box>
-      </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
+          <Box minW="40%" minH="10rem" ml="auto" mr="0%">
+            <SyntaxHighlighter language="javascript" style={atomDark}>
+              {codeString}
+            </SyntaxHighlighter>
+          </Box>
+        </ScrollAnimation>
+      </Flex>
     </Box>
   );
 };
