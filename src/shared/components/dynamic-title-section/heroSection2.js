@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import { Animated } from "react-web-animation";
 
-export const Basic2 = () => {
-  function getKeyFrames() {
+export default class Basic extends Component {
+  getKeyFrames() {
     return [
       { transform: "scale(1)", opacity: 1, offset: 0 },
       { transform: "scale(.5)", opacity: 0.5, offset: 0.3 },
@@ -11,7 +11,7 @@ export const Basic2 = () => {
     ];
   }
 
-  function getTiming(duration) {
+  getTiming(duration) {
     return {
       duration,
       easing: "ease-in-out",
@@ -21,11 +21,15 @@ export const Basic2 = () => {
       fill: "forwards",
     };
   }
-  return (
-    <Animated.div keyframes={getKeyFrames()} timing={getTiming(2500)}>
-      Web Animations API Rocks
-    </Animated.div>
-  );
-};
 
-export default Basic2;
+  render() {
+    return (
+      <Animated.div
+        keyframes={this.getKeyFrames()}
+        timing={this.getTiming(2500)}
+      >
+        Web Animations API Rocks
+      </Animated.div>
+    );
+  }
+}
