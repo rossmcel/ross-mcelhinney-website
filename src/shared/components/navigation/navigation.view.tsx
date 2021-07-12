@@ -53,7 +53,7 @@ export const NavigationView: React.FC = () => {
         flexGrow={1}
         flexDirection="row-reverse"
       >
-        <MenuItems menuItemLink="/Community">Contact Me</MenuItems>
+        <MenuItems menuItemLink="/Contact">Contact Me</MenuItems>
         <MenuItems menuItemLink="/Projects">My Projects</MenuItems>
         <MenuItems menuItemLink="/">Home</MenuItems>
       </Box>

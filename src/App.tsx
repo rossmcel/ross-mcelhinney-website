@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Home } from "./app/home";
 import { Projects } from "./app/projects";
+import { Contact } from "./app/contact";
 import { Navigation } from "./shared/components/navigation";
 import "./App.css";
 import { Footer } from "./shared/components/footer";
@@ -13,6 +14,7 @@ const App: React.FC = () => (
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/Projects" component={Projects} exact />
+        <Route path="/Contact" component={Contact} exact />
       </Switch>
     </div>
     <Footer topText="Created with React JS" bottomText="Version 1.0" />
