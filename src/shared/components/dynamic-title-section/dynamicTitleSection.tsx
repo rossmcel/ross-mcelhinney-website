@@ -13,7 +13,7 @@ export const DynamicTitleSection: React.FC = () => {
       zIndex="-3"
       overflow="hidden"
     >
-      <Box ml="5rem">
+      <Box ml="5rem" mt="2rem">
         <ScrollAnimation
           duration={2}
           animateIn="animate__fadeIn"

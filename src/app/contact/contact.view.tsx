@@ -4,7 +4,7 @@ import DynamicTitleSection from "../../shared/components/dynamic-title-section/d
 
 export const ContactView: React.FC = () => {
   return (
-    <Box overflow="hidden" minH="130rem" mt="7rem">
+    <Box overflow="hidden" minH="130rem" mt="2rem">
       <DynamicTitleSection />
     </Box>
   );
