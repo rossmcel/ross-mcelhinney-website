@@ -13,24 +13,42 @@ export const DynamicTitleSection: React.FC = () => {
       zIndex="-3"
       overflow="hidden"
     >
-      <Box ml="5rem" mt="2rem">
-        <ScrollAnimation
-          duration={2}
-          animateIn="animate__fadeIn"
-          initiallyVisible={false}
-        >
-          <Heading color="white">email</Heading>
-        </ScrollAnimation>
-      </Box>
-      <Box ml="5rem">
-        <ScrollAnimation
-          delay={2000}
-          duration={2}
-          animateIn="animate__fadeIn"
-          initiallyVisible={false}
-        >
-          <Heading color="white">linkedin</Heading>
-        </ScrollAnimation>
+      <Box
+        position="absolute"
+        ml="40rem"
+        mr="auto"
+        mt="12rem"
+        minW="20rem"
+        minH="12rem"
+        maxW="20rem"
+        maxH="12rem"
+        border="2px solid white"
+        borderRadius="2rem"
+        pl="1rem"
+      >
+        <Box>
+          <ScrollAnimation
+            duration={2}
+            animateIn="animate__fadeIn"
+            initiallyVisible={false}
+          >
+            <Heading color="white" as="h3" size="2xl">
+              email
+            </Heading>
+          </ScrollAnimation>
+        </Box>
+        <Box>
+          <ScrollAnimation
+            delay={2000}
+            duration={2}
+            animateIn="animate__fadeIn"
+            initiallyVisible={false}
+          >
+            <Heading color="white" as="h3" size="2xl">
+              linkedin
+            </Heading>
+          </ScrollAnimation>
+        </Box>
       </Box>
       <Box
         position="absolute"
