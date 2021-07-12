@@ -6,8 +6,10 @@ import "animate.css/animate.min.css";
 export const DynamicTitleSection: React.FC = () => {
   return (
     <Box
-      minH="40rem"
-      minw="100%"
+      minH="30rem"
+      minw="80%"
+      maxW="80%"
+      ml="10%"
       bgColor="lightpink"
       position="relative"
       zIndex="-3"
@@ -15,13 +17,13 @@ export const DynamicTitleSection: React.FC = () => {
     >
       <Box
         position="absolute"
-        ml="40rem"
+        ml="40%"
         mr="auto"
-        mt="12rem"
-        minW="20rem"
-        minH="12rem"
-        maxW="20rem"
-        maxH="12rem"
+        mt="12%"
+        minW="20%"
+        minH="10rem"
+        maxW="20%"
+        maxH="10rem"
         border="2px solid white"
         borderRadius="2rem"
         pl="1rem"
@@ -46,6 +48,18 @@ export const DynamicTitleSection: React.FC = () => {
           >
             <Heading color="white" as="h3" size="2xl">
               linkedin
+            </Heading>
+          </ScrollAnimation>
+        </Box>
+        <Box>
+          <ScrollAnimation
+            delay={4000}
+            duration={2}
+            animateIn="animate__fadeIn"
+            initiallyVisible={false}
+          >
+            <Heading color="white" as="h3" size="2xl">
+              mobile
             </Heading>
           </ScrollAnimation>
         </Box>
