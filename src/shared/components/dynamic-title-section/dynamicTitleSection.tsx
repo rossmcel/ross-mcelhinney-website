@@ -5,9 +5,10 @@ import "animate.css/animate.min.css";
 import { useSpring, animated } from "react-spring";
 
 export const DynamicTitleSection: React.FC = () => {
-  const [{ y, backgroundColor }, set] = useSpring(() => ({
+  const [{ y, backgroundColor, marginTop }, set] = useSpring(() => ({
     y: 100,
     backgroundColor: "#fff",
+    marginTop: "15rem",
   }));
   return (
     <Box>
@@ -287,8 +288,12 @@ export const DynamicTitleSection: React.FC = () => {
       </Box>
 
       <button
-        onMouseEnter={() => set({ y: 0, backgroundColor: "black" })}
-        onMouseLeave={() => set({ y: 100, backgroundColor: "blue" })}
+        onMouseEnter={() =>
+          set({ y: 0, backgroundColor: "black", marginTop: "8rem" })
+        }
+        onMouseLeave={() =>
+          set({ y: 100, backgroundColor: "blue", marginTop: "15rem" })
+        }
       >
         <Flex
           direction="column"
@@ -329,11 +334,11 @@ export const DynamicTitleSection: React.FC = () => {
 
               <animated.div
                 style={{
+                  marginTop,
                   backgroundColor,
                   width: "8rem",
                   height: "8rem",
                   border: "1px solid black",
-                  marginTop: "15rem",
                   gridColumn: 1,
                   gridRow: 1,
                   position: "absolute",
