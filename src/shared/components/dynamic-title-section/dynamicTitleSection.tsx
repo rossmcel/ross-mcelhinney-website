@@ -22,12 +22,14 @@ export const DynamicTitleSection: React.FC = () => {
           mr="auto"
           mt="12%"
           minW="20%"
-          minH="10rem"
+          minH="12.5rem"
           maxW="20%"
-          maxH="10rem"
+          maxH="12.5rem"
           border="2px solid white"
           borderRadius="2rem"
-          pl="1rem"
+          pl="1.5rem"
+          pt="1.5rem"
+          pb="1.5rem"
         >
           <Box>
             <ScrollAnimation
