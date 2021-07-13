@@ -7,8 +7,8 @@ import { useSpring, animated } from "react-spring";
 export const DynamicTitleSection: React.FC = () => {
   const [{ y, backgroundColor, marginTop }, set] = useSpring(() => ({
     y: 100,
-    backgroundColor: "#fff",
-    marginTop: "15rem",
+    backgroundColor: "white",
+    marginTop: "14rem",
   }));
   return (
     <Box>
@@ -226,73 +226,13 @@ export const DynamicTitleSection: React.FC = () => {
           opacity="0.4"
         ></Box>
       </Box>
-      <Box>
-        <Flex
-          mt="5rem"
-          minW="10rem"
-          maxW="10rem"
-          minH="10rem"
-          maxH="10rem"
-          ml="2rem"
-          direction="column"
-          overflow="hidden"
-        >
-          <Flex direction="row">
-            <Box minW="10rem" maxW="10rem" minH="4rem" maxH="4rem" z-index="-1">
-              <svg height="140" width="300">
-                <polygon
-                  points="80,0 0,64 160,64"
-                  fill="none"
-                  stroke="purple"
-                  stroke-width="1"
-                />
-              </svg>
-            </Box>
-          </Flex>
-          <Box
-            minW="100%"
-            maxW="100%"
-            minH="6rem"
-            maxH="6rem"
-            border="1px solid grey"
-            z-index="-1"
-          >
-            <Box>
-              <svg height="176" width="300" z-index="2">
-                <rect
-                  width="120"
-                  height="100"
-                  fill="none"
-                  stroke-width="1"
-                  stroke="grey"
-                  x="20"
-                />
-                <polygon
-                  points="0,0 0,94 160,94"
-                  fill="#56caf5"
-                  stroke="purple"
-                  stroke-width="1"
-                  z-index="2"
-                />
-                <polygon
-                  points="160,0 0,94 160,94"
-                  fill="#56caf5"
-                  stroke="purple"
-                  stroke-width="1"
-                  z-index="2"
-                />
-              </svg>
-            </Box>
-          </Box>
-        </Flex>
-      </Box>
 
       <button
         onMouseEnter={() =>
-          set({ y: 0, backgroundColor: "black", marginTop: "8rem" })
+          set({ y: 0, backgroundColor: "#90f5cf", marginTop: "9rem" })
         }
         onMouseLeave={() =>
-          set({ y: 100, backgroundColor: "blue", marginTop: "15rem" })
+          set({ y: 100, backgroundColor: "white", marginTop: "14rem" })
         }
       >
         <Flex
@@ -324,7 +264,7 @@ export const DynamicTitleSection: React.FC = () => {
                 minH="7.1rem"
                 maxH="7.1rem"
                 mt="10rem"
-                border="1px solid black"
+                border="3px solid rgba(144, 245, 207, .7)"
                 transform="rotate(-135deg)"
                 gridColumn="1"
                 gridRow="1"
@@ -338,7 +278,7 @@ export const DynamicTitleSection: React.FC = () => {
                   backgroundColor,
                   width: "8rem",
                   height: "8rem",
-                  border: "1px solid black",
+                  border: "3px solid rgba(144, 245, 207, .7)",
                   gridColumn: 1,
                   gridRow: 1,
                   position: "absolute",
@@ -353,7 +293,7 @@ export const DynamicTitleSection: React.FC = () => {
             minH="6.5rem"
             maxH="6.5rem"
             mb="3.5rem"
-            border="1px solid black"
+            border="3px solid rgba(144, 245, 207, .7)"
             display="grid"
             overflow="hidden"
             z-index="-2"
@@ -365,7 +305,7 @@ export const DynamicTitleSection: React.FC = () => {
               maxH="12rem"
               ml="2.2rem"
               mt="2.2rem"
-              border="1px solid black"
+              border="3px solid rgba(144, 245, 207, .7)"
               transform="rotate(-123deg)"
               gridColumn="1"
               gridRow="1"
@@ -378,9 +318,9 @@ export const DynamicTitleSection: React.FC = () => {
               minH="6rem"
               maxH="6rem"
               borderBottom="hidden"
-              borderTop="1px solid black"
-              borderRight="1px solid black"
-              borderLeft="1px solid black"
+              borderTop="3px solid rgba(144, 245, 207, .7)"
+              borderRight="3px solid rgba(144, 245, 207, .7)"
+              borderLeft="3px solid rgba(144, 245, 207, .7)"
               transform="rotate(-57deg)"
               ml="-2.1rem"
               mt="1.05rem"
