@@ -34,7 +34,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
         })
       }
     >
-      <Box w="20rem" h="20rem" position="absolute">
+      <Box w="8rem" h="20rem" position="absolute">
         <animated.div
           style={{
             marginTop,
@@ -92,6 +92,56 @@ export const AnimatedPhoneIconView: React.FC = () => {
             ></animated.div>
             <animated.div
               style={{
+                backgroundColor: backgroundColor3,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+              }}
+            ></animated.div>
+          </Flex>
+          <Flex
+            mt="0.5rem"
+            direction="row"
+            minH="1.2rem"
+            minW="85%"
+            maxW="85%"
+            ml="auto"
+            mr="auto"
+          >
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor2,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginLeft: "0.2%",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor1,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor3,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
                 backgroundColor: backgroundColor1,
                 height: "1.2rem",
                 width: "22%",
@@ -109,38 +159,46 @@ export const AnimatedPhoneIconView: React.FC = () => {
             ml="auto"
             mr="auto"
           >
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              ml="0.2%"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-            ></Flex>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor2,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginLeft: "0.2%",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor1,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor2,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor3,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+              }}
+            ></animated.div>
           </Flex>
           <Flex
             mt="0.5rem"
@@ -151,38 +209,46 @@ export const AnimatedPhoneIconView: React.FC = () => {
             ml="auto"
             mr="auto"
           >
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              ml="0.2%"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-            ></Flex>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor1,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginLeft: "0.2%",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor1,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor1,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor3,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+              }}
+            ></animated.div>
           </Flex>
           <Flex
             mt="0.5rem"
@@ -193,38 +259,46 @@ export const AnimatedPhoneIconView: React.FC = () => {
             ml="auto"
             mr="auto"
           >
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              ml="0.2%"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-            ></Flex>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor2,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginLeft: "0.2%",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor3,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor1,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor2,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+              }}
+            ></animated.div>
           </Flex>
           <Flex
             mt="0.5rem"
@@ -235,80 +309,46 @@ export const AnimatedPhoneIconView: React.FC = () => {
             ml="auto"
             mr="auto"
           >
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              ml="0.2%"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-            ></Flex>
-          </Flex>
-          <Flex
-            mt="0.5rem"
-            direction="row"
-            minH="1.2rem"
-            minW="85%"
-            maxW="85%"
-            ml="auto"
-            mr="auto"
-          >
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              ml="0.2%"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              minW="22%"
-              maxW="22%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-            ></Flex>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor2,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginLeft: "0.2%",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor2,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor3,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor1,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+              }}
+            ></animated.div>
           </Flex>
           <Flex
             mt="0.4rem"
@@ -322,51 +362,46 @@ export const AnimatedPhoneIconView: React.FC = () => {
             borderRadius="0.6rem"
             bgColor="#f5f5f5"
           >
-            <Flex
-              minH="1.2rem"
-              maxH="1.2rem"
-              mt="auto"
-              mb="auto"
-              minW="20.5%"
-              maxW="20.5%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              ml="3%"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              maxH="1.2rem"
-              mt="auto"
-              mb="auto"
-              minW="20.5%"
-              maxW="20.5%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              maxH="1.2rem"
-              mt="auto"
-              mb="auto"
-              minW="20.5%"
-              maxW="20.5%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              mr="4%"
-            ></Flex>
-            <Flex
-              minH="1.2rem"
-              maxH="1.2rem"
-              mt="auto"
-              mb="auto"
-              minW="20.5%"
-              maxW="20.5%"
-              border="0.1em solid rgba(168, 168, 168, .2)"
-              borderRadius="0.3rem"
-              mr="3%"
-            ></Flex>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor1,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginLeft: "0.2%",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor2,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor3,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor1,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+              }}
+            ></animated.div>
           </Flex>
         </animated.div>
       </Box>
