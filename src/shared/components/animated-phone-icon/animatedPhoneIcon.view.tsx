@@ -4,7 +4,14 @@ import { useSpring, animated } from "react-spring";
 
 export const AnimatedPhoneIconView: React.FC = () => {
   const [
-    { y, backgroundColor1, backgroundColor2, backgroundColor3, marginTop },
+    {
+      y,
+      backgroundColor1,
+      backgroundColor2,
+      backgroundColor3,
+      marginTop,
+      color,
+    },
     set,
   ] = useSpring(() => ({
     y: 100,
@@ -12,6 +19,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
     backgroundColor2: "white",
     backgroundColor3: "white",
     marginTop: "7rem",
+    color: "white",
   }));
   return (
     <button
@@ -22,6 +30,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
           backgroundColor2: "#f0bde4",
           backgroundColor3: "#77fc9d",
           marginTop: "0rem",
+          color: "black",
         })
       }
       onMouseLeave={() =>
@@ -31,17 +40,31 @@ export const AnimatedPhoneIconView: React.FC = () => {
           backgroundColor2: "white",
           backgroundColor3: "white",
           marginTop: "7rem",
+          color: "white",
         })
       }
     >
-      <Box w="8rem" h="20rem" position="absolute">
+      <Flex direction="column" w="15rem" h="50rem" position="absolute">
+        <animated.div
+          style={{
+            marginTop,
+            color,
+            width: "15rem",
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginBottom: "-9rem",
+            height: "13rem",
+          }}
+        >
+          <Heading>087 714 5473</Heading>
+        </animated.div>
         <animated.div
           style={{
             marginTop,
             width: "7.1rem",
             height: "13rem",
-            marginLeft: "5rem",
-            marginRight: "5rem",
+            marginLeft: "auto",
+            marginRight: "auto",
             overflow: "hidden",
             borderTop: "6px solid black",
             borderBottom: "5px solid black",
@@ -404,7 +427,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
             ></animated.div>
           </Flex>
         </animated.div>
-      </Box>
+      </Flex>
     </button>
   );
 };
