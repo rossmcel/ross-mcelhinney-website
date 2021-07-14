@@ -18,7 +18,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
     backgroundColor1: "white",
     backgroundColor2: "white",
     backgroundColor3: "white",
-    marginTop: "7rem",
+    marginTop: "2rem",
     color: "white",
   }));
   return (
@@ -39,7 +39,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
           backgroundColor1: "white",
           backgroundColor2: "white",
           backgroundColor3: "white",
-          marginTop: "7rem",
+          marginTop: "2rem",
           color: "white",
         })
       }
