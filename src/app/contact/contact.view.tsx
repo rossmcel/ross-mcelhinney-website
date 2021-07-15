@@ -1,12 +1,15 @@
 import React from "react";
-import { Box, Flex, Center } from "@chakra-ui/react";
+import { Box, Flex, Heading } from "@chakra-ui/react";
 import { AnimatedEmailIcon } from "../../shared/components/animated-email-icon";
 import { AnimatedPhoneIcon } from "../../shared/components/animated-phone-icon";
 import { AnimatedLinkedinIcon } from "../../shared/components/animated-linkedin-icon";
 
 export const ContactView: React.FC = () => {
   return (
-    <Box overflow="hidden" minH="130rem" mt="2rem">
+    <Box overflow="hidden" minH="50rem" mt="2rem">
+      <Heading size="xl" mb="3rem" textAlign="center">
+        Contact Me
+      </Heading>
       <Flex
         direction="row"
         mt="5rem"
