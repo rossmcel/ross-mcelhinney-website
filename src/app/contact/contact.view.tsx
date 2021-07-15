@@ -17,7 +17,7 @@ export const ContactView: React.FC = () => {
         display="grid"
         maxWidth="70rem"
       >
-        <Flex mr="5rem" gridRow="1" gridColumn="1" ml="-4rem">
+        <Flex mr="-2rem" gridRow="1" gridColumn="1" ml="-7rem">
           <AnimatedEmailIcon />
         </Flex>
         <Flex mr="13rem" gridRow="1" gridColumn="2">
