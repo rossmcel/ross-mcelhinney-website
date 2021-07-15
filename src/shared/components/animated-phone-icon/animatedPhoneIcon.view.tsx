@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Heading, Flex } from "@chakra-ui/react";
 import { useSpring, animated } from "react-spring";
 import FileCopyOutlinedIcon from "@material-ui/icons/FileCopyOutlined";
 import CallIcon from "@material-ui/icons/Call";
+import Tooltip from "@material-ui/core/Tooltip";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 export const AnimatedPhoneIconView: React.FC = () => {
+  const value = "+353877145473";
+  const [copied, setCopied] = useState(false);
   const [
     {
       y,
@@ -66,19 +70,27 @@ export const AnimatedPhoneIconView: React.FC = () => {
         >
           <Heading fontSize="1.8rem">
             +353 87 714 5473
+            <br></br>
+            {copied ? (
+              <animated.span style={{ color, fontSize: "1rem" }}>
+                Copied.
+              </animated.span>
+            ) : null}
+            <CopyToClipboard text={value} onCopy={() => setCopied(true)}>
+              <button>
+                <Tooltip title="Copy to Clipboard">
+                  <FileCopyOutlinedIcon />
+                </Tooltip>
+              </button>
+            </CopyToClipboard>
             <a
               href="https://www.linkedin.com/in/ross-mcelhinney"
               color="grey"
               style={{ marginLeft: "0.5rem" }}
             >
-              <FileCopyOutlinedIcon />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ross-mcelhinney"
-              color="grey"
-              style={{ marginLeft: "0.5rem" }}
-            >
-              <CallIcon />
+              <Tooltip title="Call Me">
+                <CallIcon />
+              </Tooltip>
             </a>
           </Heading>
         </animated.div>

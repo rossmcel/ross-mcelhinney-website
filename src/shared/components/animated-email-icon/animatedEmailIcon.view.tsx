@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Center, Heading, Flex } from "@chakra-ui/react";
 import { useSpring, animated } from "react-spring";
 import FileCopyOutlinedIcon from "@material-ui/icons/FileCopyOutlined";
 import EmailIcon from "@material-ui/icons/Email";
+import Tooltip from "@material-ui/core/Tooltip";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 export const AnimatedEmailIconView: React.FC = () => {
+  const value = "rossmcelhinney123@gmail.com";
+  const [copied, setCopied] = useState(false);
+
   const [{ y, backgroundColor, marginTop, color }, set] = useSpring(() => ({
     y: 100,
     backgroundColor: "white",
@@ -46,19 +51,26 @@ export const AnimatedEmailIconView: React.FC = () => {
           <Heading fontSize="1.5rem">
             rossmcelhinney123@gmail.com
             <br></br>
-            <a
-              href="https://www.linkedin.com/in/ross-mcelhinney"
-              color="grey"
-              style={{ marginLeft: "0.5rem" }}
-            >
-              <FileCopyOutlinedIcon />
-            </a>
+            {copied ? (
+              <animated.span style={{ color, fontSize: "1rem" }}>
+                Copied.
+              </animated.span>
+            ) : null}
+            <CopyToClipboard text={value} onCopy={() => setCopied(true)}>
+              <button>
+                <Tooltip title="Copy to Clipboard">
+                  <FileCopyOutlinedIcon />
+                </Tooltip>
+              </button>
+            </CopyToClipboard>
             <a
               href="mailto:rossmcelhinney123@gmail.com"
               color="grey"
               style={{ marginLeft: "0.5rem" }}
             >
-              <EmailIcon />
+              <Tooltip title="Email Me">
+                <EmailIcon />
+              </Tooltip>
             </a>
           </Heading>
         </animated.div>

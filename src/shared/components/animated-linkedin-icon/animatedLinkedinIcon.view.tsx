@@ -2,6 +2,7 @@ import React from "react";
 import { Heading, Flex, Box } from "@chakra-ui/react";
 import { useSpring, animated } from "react-spring";
 import ExitToAppOutlinedIcon from "@material-ui/icons/ExitToAppOutlined";
+import Tooltip from "@material-ui/core/Tooltip";
 
 export const AnimatedLinkedinIconView: React.FC = () => {
   const [{ y, marginTop, color }, set] = useSpring(() => ({
@@ -39,7 +40,9 @@ export const AnimatedLinkedinIconView: React.FC = () => {
               color="grey"
               style={{ marginLeft: "0.5rem" }}
             >
-              <ExitToAppOutlinedIcon />
+              <Tooltip title="Visit My LinkedIn Profile">
+                <ExitToAppOutlinedIcon />
+              </Tooltip>
             </a>
           </Heading>
         </animated.div>
