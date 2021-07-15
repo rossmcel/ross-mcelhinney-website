@@ -44,7 +44,13 @@ export const AnimatedPhoneIconView: React.FC = () => {
         })
       }
     >
-      <Flex direction="column" w="15rem" h="50rem" position="absolute">
+      <Flex
+        direction="column"
+        w="15rem"
+        h="50rem"
+        position="absolute"
+        mt="-12rem"
+      >
         <animated.div
           style={{
             marginTop,

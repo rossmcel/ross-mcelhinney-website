@@ -3,6 +3,7 @@ import { Box, Flex, Center } from "@chakra-ui/react";
 import DynamicTitleSection from "../../shared/components/dynamic-title-section/dynamicTitleSection";
 import { AnimatedEmailIcon } from "../../shared/components/animated-email-icon";
 import { AnimatedPhoneIcon } from "../../shared/components/animated-phone-icon";
+import { AnimatedLinkedinIcon } from "../../shared/components/animated-linkedin-icon";
 
 export const ContactView: React.FC = () => {
   return (
@@ -16,14 +17,14 @@ export const ContactView: React.FC = () => {
         display="grid"
         maxWidth="70rem"
       >
-        <Flex mr="5rem" gridRow="1" gridColumn="1" ml="0rem">
+        <Flex mr="5rem" gridRow="1" gridColumn="1" ml="-4rem">
           <AnimatedEmailIcon />
         </Flex>
-        <Flex mr="16rem" mt="-22rem" gridRow="1" gridColumn="2">
+        <Flex mr="13rem" gridRow="1" gridColumn="2">
           <AnimatedPhoneIcon />
         </Flex>
-        <Flex mt="-22rem" mr="7rem" gridRow="1" gridColumn="3">
-          <AnimatedPhoneIcon />
+        <Flex mr="6rem" gridRow="1" gridColumn="3">
+          <AnimatedLinkedinIcon />
         </Flex>
       </Flex>
     </Box>
