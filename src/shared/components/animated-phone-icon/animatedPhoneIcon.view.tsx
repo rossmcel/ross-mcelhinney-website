@@ -62,7 +62,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
             height: "13rem",
           }}
         >
-          <Heading>087 714 5473</Heading>
+          <Heading fontSize="1.8rem">087 714 5473</Heading>
         </animated.div>
         <animated.div
           style={{

@@ -31,7 +31,7 @@ export const AnimatedLinkedinIconView: React.FC = () => {
             height: "13rem",
           }}
         >
-          <Heading>ross-mcelhinney</Heading>
+          <Heading fontSize="1.8rem">ross-mcelhinney</Heading>
         </animated.div>
         <animated.div
           style={{
