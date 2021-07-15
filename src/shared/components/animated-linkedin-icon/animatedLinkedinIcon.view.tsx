@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Center, Heading, Text, Flex, background } from "@chakra-ui/react";
+import { Heading, Flex, Box } from "@chakra-ui/react";
 import { useSpring, animated } from "react-spring";
+import ExitToAppOutlinedIcon from "@material-ui/icons/ExitToAppOutlined";
 
 export const AnimatedLinkedinIconView: React.FC = () => {
   const [{ y, marginTop, color }, set] = useSpring(() => ({
@@ -31,7 +32,16 @@ export const AnimatedLinkedinIconView: React.FC = () => {
             height: "13rem",
           }}
         >
-          <Heading fontSize="1.8rem">ross-mcelhinney</Heading>
+          <Heading fontSize="1.8rem">
+            ross-mcelhinney
+            <a
+              href="https://www.linkedin.com/in/ross-mcelhinney"
+              color="grey"
+              style={{ marginLeft: "0.5rem" }}
+            >
+              <ExitToAppOutlinedIcon />
+            </a>
+          </Heading>
         </animated.div>
         <animated.div
           style={{

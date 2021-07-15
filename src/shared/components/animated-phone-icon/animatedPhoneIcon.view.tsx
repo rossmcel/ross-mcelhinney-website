@@ -1,6 +1,8 @@
 import React from "react";
-import { Box, Center, Heading, Text, Flex, background } from "@chakra-ui/react";
+import { Heading, Flex } from "@chakra-ui/react";
 import { useSpring, animated } from "react-spring";
+import FileCopyOutlinedIcon from "@material-ui/icons/FileCopyOutlined";
+import CallIcon from "@material-ui/icons/Call";
 
 export const AnimatedPhoneIconView: React.FC = () => {
   const [
@@ -49,7 +51,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
         w="15rem"
         h="50rem"
         position="absolute"
-        mt="-12rem"
+        mt="-13rem"
       >
         <animated.div
           style={{
@@ -58,11 +60,27 @@ export const AnimatedPhoneIconView: React.FC = () => {
             width: "15rem",
             marginLeft: "auto",
             marginRight: "auto",
-            marginBottom: "-9rem",
+            marginBottom: "-8rem",
             height: "13rem",
           }}
         >
-          <Heading fontSize="1.8rem">+353 87 714 5473</Heading>
+          <Heading fontSize="1.8rem">
+            +353 87 714 5473
+            <a
+              href="https://www.linkedin.com/in/ross-mcelhinney"
+              color="grey"
+              style={{ marginLeft: "0.5rem" }}
+            >
+              <FileCopyOutlinedIcon />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ross-mcelhinney"
+              color="grey"
+              style={{ marginLeft: "0.5rem" }}
+            >
+              <CallIcon />
+            </a>
+          </Heading>
         </animated.div>
         <animated.div
           style={{

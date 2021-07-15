@@ -1,6 +1,8 @@
 import React from "react";
-import { Box, Center, Heading, Text, Flex, background } from "@chakra-ui/react";
+import { Box, Center, Heading, Flex } from "@chakra-ui/react";
 import { useSpring, animated } from "react-spring";
+import FileCopyOutlinedIcon from "@material-ui/icons/FileCopyOutlined";
+import EmailIcon from "@material-ui/icons/Email";
 
 export const AnimatedEmailIconView: React.FC = () => {
   const [{ y, backgroundColor, marginTop, color }, set] = useSpring(() => ({
@@ -38,9 +40,27 @@ export const AnimatedEmailIconView: React.FC = () => {
             marginRight: "auto",
             marginBottom: "-9rem",
             height: "13rem",
+            position: "relative",
           }}
         >
-          <Heading fontSize="1.5rem">rossmcelhinney123@gmail.com</Heading>
+          <Heading fontSize="1.5rem">
+            rossmcelhinney123@gmail.com
+            <br></br>
+            <a
+              href="https://www.linkedin.com/in/ross-mcelhinney"
+              color="grey"
+              style={{ marginLeft: "0.5rem" }}
+            >
+              <FileCopyOutlinedIcon />
+            </a>
+            <a
+              href="mailto:rossmcelhinney123@gmail.com"
+              color="grey"
+              style={{ marginLeft: "0.5rem" }}
+            >
+              <EmailIcon />
+            </a>
+          </Heading>
         </animated.div>
         <Flex
           direction="column"
