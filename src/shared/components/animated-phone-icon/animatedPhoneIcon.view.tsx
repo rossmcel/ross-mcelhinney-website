@@ -15,6 +15,10 @@ export const AnimatedPhoneIconView: React.FC = () => {
       backgroundColor1,
       backgroundColor2,
       backgroundColor3,
+      backgroundColor4,
+      backgroundColor5,
+      backgroundColor6,
+      backgroundColor7,
       marginTop,
       color,
     },
@@ -24,6 +28,10 @@ export const AnimatedPhoneIconView: React.FC = () => {
     backgroundColor1: "white",
     backgroundColor2: "white",
     backgroundColor3: "white",
+    backgroundColor4: "white",
+    backgroundColor5: "white",
+    backgroundColor6: "white",
+    backgroundColor7: "white",
     marginTop: "2rem",
     color: "white",
   }));
@@ -32,9 +40,13 @@ export const AnimatedPhoneIconView: React.FC = () => {
       onMouseEnter={() =>
         set({
           y: 0,
-          backgroundColor1: "#90f5cf",
-          backgroundColor2: "#f0bde4",
+          backgroundColor1: "white",
+          backgroundColor2: "lightblue",
           backgroundColor3: "#77fc9d",
+          backgroundColor4: "blue",
+          backgroundColor5: "orange",
+          backgroundColor6: "black",
+          backgroundColor7: "grey",
           marginTop: "0rem",
           color: "black",
         })
@@ -45,6 +57,10 @@ export const AnimatedPhoneIconView: React.FC = () => {
           backgroundColor1: "white",
           backgroundColor2: "white",
           backgroundColor3: "white",
+          backgroundColor4: "white",
+          backgroundColor5: "white",
+          backgroundColor6: "white",
+          backgroundColor7: "white",
           marginTop: "2rem",
           color: "white",
         })
@@ -84,7 +100,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
               </button>
             </CopyToClipboard>
             <a
-              href="https://www.linkedin.com/in/ross-mcelhinney"
+              href="tel:+353877145473"
               color="grey"
               style={{ marginLeft: "0.5rem" }}
             >
@@ -120,7 +136,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
           >
             <animated.div
               style={{
-                backgroundColor: backgroundColor1,
+                backgroundColor: backgroundColor6,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
@@ -131,7 +147,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
             ></animated.div>
             <animated.div
               style={{
-                backgroundColor: backgroundColor2,
+                backgroundColor: backgroundColor6,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
@@ -151,7 +167,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
             ></animated.div>
             <animated.div
               style={{
-                backgroundColor: backgroundColor3,
+                backgroundColor: backgroundColor4,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
@@ -170,7 +186,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
           >
             <animated.div
               style={{
-                backgroundColor: backgroundColor2,
+                backgroundColor: backgroundColor6,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
@@ -191,7 +207,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
             ></animated.div>
             <animated.div
               style={{
-                backgroundColor: backgroundColor3,
+                backgroundColor: backgroundColor7,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
@@ -201,7 +217,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
             ></animated.div>
             <animated.div
               style={{
-                backgroundColor: backgroundColor1,
+                backgroundColor: backgroundColor2,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
@@ -220,7 +236,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
           >
             <animated.div
               style={{
-                backgroundColor: backgroundColor2,
+                backgroundColor: backgroundColor7,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
@@ -231,7 +247,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
             ></animated.div>
             <animated.div
               style={{
-                backgroundColor: backgroundColor1,
+                backgroundColor: backgroundColor4,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
@@ -241,47 +257,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
             ></animated.div>
             <animated.div
               style={{
-                backgroundColor: backgroundColor2,
-                height: "1.2rem",
-                width: "22%",
-                border: "0.1em solid rgba(168, 168, 168, .2)",
-                borderRadius: "0.3rem",
-                marginRight: "4%",
-              }}
-            ></animated.div>
-            <animated.div
-              style={{
-                backgroundColor: backgroundColor3,
-                height: "1.2rem",
-                width: "22%",
-                border: "0.1em solid rgba(168, 168, 168, .2)",
-                borderRadius: "0.3rem",
-              }}
-            ></animated.div>
-          </Flex>
-          <Flex
-            mt="0.5rem"
-            direction="row"
-            minH="1.2rem"
-            minW="85%"
-            maxW="85%"
-            ml="auto"
-            mr="auto"
-          >
-            <animated.div
-              style={{
-                backgroundColor: backgroundColor1,
-                height: "1.2rem",
-                width: "22%",
-                border: "0.1em solid rgba(168, 168, 168, .2)",
-                borderRadius: "0.3rem",
-                marginLeft: "0.2%",
-                marginRight: "4%",
-              }}
-            ></animated.div>
-            <animated.div
-              style={{
-                backgroundColor: backgroundColor1,
+                backgroundColor: backgroundColor5,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
@@ -292,16 +268,6 @@ export const AnimatedPhoneIconView: React.FC = () => {
             <animated.div
               style={{
                 backgroundColor: backgroundColor1,
-                height: "1.2rem",
-                width: "22%",
-                border: "0.1em solid rgba(168, 168, 168, .2)",
-                borderRadius: "0.3rem",
-                marginRight: "4%",
-              }}
-            ></animated.div>
-            <animated.div
-              style={{
-                backgroundColor: backgroundColor3,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
@@ -341,7 +307,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
             ></animated.div>
             <animated.div
               style={{
-                backgroundColor: backgroundColor1,
+                backgroundColor: backgroundColor4,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
@@ -351,7 +317,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
             ></animated.div>
             <animated.div
               style={{
-                backgroundColor: backgroundColor2,
+                backgroundColor: backgroundColor4,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
@@ -370,7 +336,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
           >
             <animated.div
               style={{
-                backgroundColor: backgroundColor2,
+                backgroundColor: backgroundColor6,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
@@ -381,17 +347,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
             ></animated.div>
             <animated.div
               style={{
-                backgroundColor: backgroundColor2,
-                height: "1.2rem",
-                width: "22%",
-                border: "0.1em solid rgba(168, 168, 168, .2)",
-                borderRadius: "0.3rem",
-                marginRight: "4%",
-              }}
-            ></animated.div>
-            <animated.div
-              style={{
-                backgroundColor: backgroundColor3,
+                backgroundColor: backgroundColor7,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
@@ -402,6 +358,66 @@ export const AnimatedPhoneIconView: React.FC = () => {
             <animated.div
               style={{
                 backgroundColor: backgroundColor1,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor6,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+              }}
+            ></animated.div>
+          </Flex>
+          <Flex
+            mt="0.5rem"
+            direction="row"
+            minH="1.2rem"
+            minW="85%"
+            maxW="85%"
+            ml="auto"
+            mr="auto"
+          >
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor3,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginLeft: "0.2%",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor6,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor5,
+                height: "1.2rem",
+                width: "22%",
+                border: "0.1em solid rgba(168, 168, 168, .2)",
+                borderRadius: "0.3rem",
+                marginRight: "4%",
+              }}
+            ></animated.div>
+            <animated.div
+              style={{
+                backgroundColor: backgroundColor7,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
@@ -423,7 +439,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
           >
             <animated.div
               style={{
-                backgroundColor: backgroundColor1,
+                backgroundColor: backgroundColor6,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
@@ -434,7 +450,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
             ></animated.div>
             <animated.div
               style={{
-                backgroundColor: backgroundColor2,
+                backgroundColor: backgroundColor7,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
@@ -454,7 +470,7 @@ export const AnimatedPhoneIconView: React.FC = () => {
             ></animated.div>
             <animated.div
               style={{
-                backgroundColor: backgroundColor1,
+                backgroundColor: backgroundColor4,
                 height: "1.2rem",
                 width: "22%",
                 border: "0.1em solid rgba(168, 168, 168, .2)",
