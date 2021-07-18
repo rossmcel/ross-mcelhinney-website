@@ -79,7 +79,6 @@ export const ProjectsView: React.FC = () => {
       ) : (
         <Box>
           <Heading>Not toggled</Heading>
-          <LaptopDisplay screenImage={HomePageRecording} />
         </Box>
       )}
     </Box>
