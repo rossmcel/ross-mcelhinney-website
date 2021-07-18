@@ -5,7 +5,7 @@ import AppsIcon from "@material-ui/icons/Apps";
 import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
 import Tooltip from "@material-ui/core/Tooltip";
 import HomePageRecording from "../../homePageRecordingMid.gif";
-import Laptop from "../../laptop2.jpg";
+import { LaptopDisplay } from "../../shared/components/device-displays/laptop-display";
 
 export const ProjectsView: React.FC = () => {
   const handleChangeAll = () => {
@@ -77,30 +77,11 @@ export const ProjectsView: React.FC = () => {
           <LeftRightImageText />
         </Box>
       ) : (
-        <Heading>Not toggled</Heading>
+        <Box>
+          <Heading>Not toggled</Heading>
+          <LaptopDisplay screenImage={HomePageRecording} />
+        </Box>
       )}
-
-      <Box w="20%" h="10%">
-        <Image src={HomePageRecording} />
-      </Box>
-      <Box minW="50%" maxW="50%" display="grid" border="1px black solid">
-        <Box w="100%" h="100%" gridColumn="1" gridRow="1">
-          <Image src={Laptop} />
-        </Box>
-        <Box
-          w="53.5%"
-          ml="23.7%"
-          mr="21.5%"
-          mt="10%"
-          h="60%"
-          gridColumn="1"
-          gridRow="1"
-        >
-          <Box w="100%" h="100%" overflow="hidden">
-            <Image src={HomePageRecording} />
-          </Box>
-        </Box>
-      </Box>
     </Box>
   );
 };
