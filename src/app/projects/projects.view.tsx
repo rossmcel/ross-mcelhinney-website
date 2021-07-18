@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Center, Heading, Text, Flex } from "@chakra-ui/react";
-import ScrollAnimation from "react-animate-on-scroll";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { LeftRightCodeText } from "../../shared/components/left-right-codesnippet-text";
+import AppsIcon from "@material-ui/icons/Apps";
+import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
+import Tooltip from "@material-ui/core/Tooltip";
 
 export const ProjectsView: React.FC = () => {
+  const handleChangeAll = () => {
+    setViewDefaultToggled(false);
+    setViewAllToggled(true);
+  };
+  const handleChangeDefault = () => {
+    setViewDefaultToggled(true);
+    setViewAllToggled(false);
+  };
+  const [toggleViewDefault, setViewDefaultToggled] = useState(true);
+  const [toggleViewAll, setViewAllToggled] = useState(false);
   const codeString = `
   import { render, screen } from '@testing-library/react';
   import App from './App';
@@ -38,119 +49,35 @@ export const ProjectsView: React.FC = () => {
           </Text>
         </Flex>
       </Center>
-      <Flex
-        direction="column"
-        mt="5rem"
-        minW="90%"
-        minH="10rem"
-        ml="5%"
-        mr="5%"
-      >
-        <Heading as="h3" size="lg" letterSpacing="-.1rem">
-          Personal Website
-        </Heading>
-        <Text color="grey" fontSize="lg">
-          React JS, TypeScript, JavaScript
-        </Text>
-        <Flex direction="row" mt="1rem" minW="100%" minH="100%">
-          <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
-            <Box minW="40%" minH="100%" ml="0%" mr="auto">
-              <SyntaxHighlighter language="javascript" style={atomDark}>
-                {codeString}
-              </SyntaxHighlighter>
-            </Box>
-          </ScrollAnimation>
-          <Box minW="60%">
-            <Text m="1rem">This is a test</Text>
-          </Box>
-        </Flex>
+      <Flex direction="column" ml="70%" mt="3rem" mb="3rem">
+        <Center mb="0.3rem">
+          <Text fontWeight="bold">Layout Type</Text>
+        </Center>
+        <Center>
+          <button
+            style={{ marginRight: "0.5rem" }}
+            onClick={() => handleChangeDefault()}
+          >
+            <Tooltip title="Default">
+              <CheckBoxOutlineBlankIcon />
+            </Tooltip>
+          </button>
+          <button onClick={() => handleChangeAll()}>
+            <Tooltip title="Show All">
+              <AppsIcon />
+            </Tooltip>
+          </button>
+        </Center>
       </Flex>
 
-      <Flex
-        direction="column"
-        mt="5rem"
-        minW="90%"
-        minH="10rem"
-        ml="5%"
-        mr="5%"
-      >
-        <Box ml="60%">
-          <Heading as="h3" size="lg" letterSpacing="-.1rem">
-            Web Application Template
-          </Heading>
-          <Text color="grey" fontSize="lg">
-            PHP, JavaScript, MySQL, HTML, CSS
-          </Text>
+      {toggleViewAll ? (
+        <Box>
+          <span style={{ fontSize: "1rem" }}>Toggled</span>
+          <LeftRightCodeText />
         </Box>
-        <Flex direction="row" mt="1rem" minW="100%" minH="100%">
-          <Box minW="60%">
-            <Text m="1rem">This is a test</Text>
-          </Box>
-          <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
-            <Box minW="40%" minH="10rem" ml="auto" mr="0%">
-              <SyntaxHighlighter language="javascript" style={atomDark}>
-                {codeString}
-              </SyntaxHighlighter>
-            </Box>
-          </ScrollAnimation>
-        </Flex>
-      </Flex>
-      <Flex
-        direction="column"
-        mt="5rem"
-        minW="90%"
-        minH="10rem"
-        ml="5%"
-        mr="5%"
-      >
-        <Heading as="h3" size="lg" letterSpacing="-.1rem">
-          My Projects
-        </Heading>
-        <Text color="grey" fontSize="lg">
-          React JS, TypeScript
-        </Text>
-        <Flex direction="row" mt="1rem" minW="100%" minH="100%">
-          <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
-            <Box minW="40%" minH="10rem" ml="0%" mr="auto">
-              <SyntaxHighlighter language="javascript" style={atomDark}>
-                {codeString}
-              </SyntaxHighlighter>
-            </Box>
-          </ScrollAnimation>
-          <Box minW="60%">
-            <Text m="1rem">This is a test</Text>
-          </Box>
-        </Flex>
-      </Flex>
-      <Flex
-        direction="column"
-        mt="5rem"
-        minW="90%"
-        minH="10rem"
-        ml="5%"
-        mr="5%"
-      >
-        <Box ml="60%">
-          <Heading as="h3" size="lg" letterSpacing="-.1rem">
-            My Projects
-          </Heading>
-          <Text color="grey" fontSize="lg">
-            React JS, TypeScript
-          </Text>
-        </Box>
-        <Flex direction="row" mt="1rem" minW="100%" minH="100%">
-          <Box minW="60%">
-            <Text m="1rem">This is a test</Text>
-          </Box>
-          <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
-            <Box minW="40%" minH="10rem" ml="auto" mr="0%">
-              <SyntaxHighlighter language="javascript" style={atomDark}>
-                {codeString}
-              </SyntaxHighlighter>
-            </Box>
-          </ScrollAnimation>
-        </Flex>
-      </Flex>
+      ) : (
+        <Heading>Not toggled</Heading>
+      )}
     </Box>
   );
 };

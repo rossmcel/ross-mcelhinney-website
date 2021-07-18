@@ -40,11 +40,11 @@ export const AnimatedPhoneIconView: React.FC = () => {
       onMouseEnter={() =>
         set({
           y: 0,
-          backgroundColor1: "white",
+          backgroundColor1: "lightblue",
           backgroundColor2: "lightblue",
           backgroundColor3: "#77fc9d",
           backgroundColor4: "blue",
-          backgroundColor5: "orange",
+          backgroundColor5: "green",
           backgroundColor6: "black",
           backgroundColor7: "grey",
           marginTop: "0rem",
