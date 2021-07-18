@@ -1,9 +1,8 @@
 import React from "react";
 import { Box, Heading, Text, Flex, Image } from "@chakra-ui/react";
 import ScrollAnimation from "react-animate-on-scroll";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import HomePageRecording from "../../../homePageRecordingMid.gif";
+import { LaptopDisplay } from "../device-displays/laptop-display";
 
 export const LeftRightImageTextView: React.FC = () => {
   return (
@@ -24,9 +23,7 @@ export const LeftRightImageTextView: React.FC = () => {
         </Text>
         <Flex direction="row" mt="1rem" minW="100%" minH="100%">
           <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
-            <Box minW="40%" minH="100%" ml="0%" mr="auto">
-              <Image src={HomePageRecording} />
-            </Box>
+            <LaptopDisplay screenImage={HomePageRecording} />
           </ScrollAnimation>
           <Box minW="60%">
             <Text m="1rem">This is a test</Text>
@@ -55,9 +52,7 @@ export const LeftRightImageTextView: React.FC = () => {
             <Text m="1rem">This is a test</Text>
           </Box>
           <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
-            <Box minW="40%" minH="10rem" ml="auto" mr="0%">
-              <Image src={HomePageRecording} />
-            </Box>
+            <LaptopDisplay screenImage={HomePageRecording} />
           </ScrollAnimation>
         </Flex>
       </Flex>
@@ -77,9 +72,7 @@ export const LeftRightImageTextView: React.FC = () => {
         </Text>
         <Flex direction="row" mt="1rem" minW="100%" minH="100%">
           <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
-            <Box minW="40%" minH="10rem" ml="0%" mr="auto">
-              <Image src={HomePageRecording} />
-            </Box>
+            <LaptopDisplay screenImage={HomePageRecording} />
           </ScrollAnimation>
           <Box minW="60%">
             <Text m="1rem">This is a test</Text>
@@ -107,9 +100,7 @@ export const LeftRightImageTextView: React.FC = () => {
             <Text m="1rem">This is a test</Text>
           </Box>
           <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
-            <Box minW="40%" minH="10rem" ml="auto" mr="0%">
-              <Image src={HomePageRecording} />
-            </Box>
+            <LaptopDisplay screenImage={HomePageRecording} />
           </ScrollAnimation>
         </Flex>
       </Flex>
