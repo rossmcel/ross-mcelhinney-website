@@ -4,7 +4,8 @@ import { LeftRightImageText } from "../../shared/components/left-right-image-tex
 import AppsIcon from "@material-ui/icons/Apps";
 import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
 import Tooltip from "@material-ui/core/Tooltip";
-import HomePageRecording from "../../homePageRecording.gif";
+import HomePageRecording from "../../homePageRecordingMid.gif";
+import Laptop from "../../laptop2.jpg";
 
 export const ProjectsView: React.FC = () => {
   const handleChangeAll = () => {
@@ -81,6 +82,24 @@ export const ProjectsView: React.FC = () => {
 
       <Box w="20%" h="10%">
         <Image src={HomePageRecording} />
+      </Box>
+      <Box minW="50%" maxW="50%" display="grid" border="1px black solid">
+        <Box w="100%" h="100%" gridColumn="1" gridRow="1">
+          <Image src={Laptop} />
+        </Box>
+        <Box
+          w="53.5%"
+          ml="23.7%"
+          mr="21.5%"
+          mt="10%"
+          h="60%"
+          gridColumn="1"
+          gridRow="1"
+        >
+          <Box w="100%" h="100%" overflow="hidden">
+            <Image src={HomePageRecording} />
+          </Box>
+        </Box>
       </Box>
     </Box>
   );

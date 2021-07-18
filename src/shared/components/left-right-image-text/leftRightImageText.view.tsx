@@ -3,7 +3,7 @@ import { Box, Heading, Text, Flex, Image } from "@chakra-ui/react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
-import HomePageRecording from "../../../homePageRecording.gif";
+import HomePageRecording from "../../../homePageRecordingMid.gif";
 
 export const LeftRightImageTextView: React.FC = () => {
   return (
