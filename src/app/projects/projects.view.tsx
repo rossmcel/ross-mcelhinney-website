@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Box, Center, Heading, Text, Flex } from "@chakra-ui/react";
-import { LeftRightCodeText } from "../../shared/components/left-right-codesnippet-text";
+import { Box, Center, Heading, Text, Flex, Image } from "@chakra-ui/react";
+import { LeftRightImageText } from "../../shared/components/left-right-image-text";
 import AppsIcon from "@material-ui/icons/Apps";
 import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
 import Tooltip from "@material-ui/core/Tooltip";
+import HomePageRecording from "../../homePageRecording.gif";
 
 export const ProjectsView: React.FC = () => {
   const handleChangeAll = () => {
@@ -72,12 +73,15 @@ export const ProjectsView: React.FC = () => {
 
       {toggleViewAll ? (
         <Box>
-          <span style={{ fontSize: "1rem" }}>Toggled</span>
-          <LeftRightCodeText />
+          <LeftRightImageText />
         </Box>
       ) : (
         <Heading>Not toggled</Heading>
       )}
+
+      <Box w="20%" h="10%">
+        <Image src={HomePageRecording} />
+      </Box>
     </Box>
   );
 };
