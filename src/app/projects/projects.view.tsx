@@ -8,6 +8,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import HomePageRecording from "../../homePageRecordingMid.gif";
 import { LaptopDisplay } from "../../shared/components/device-displays/laptop-display";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+import { SearchDisplay } from "../../shared/components/search-display";
 
 export const ProjectsView: React.FC = () => {
   const handleChangeAll = () => {
@@ -160,8 +161,71 @@ export const ProjectsView: React.FC = () => {
           </LeftRightImageText>
         </Box>
       ) : (
-        <Box>
-          <Heading>Not toggled</Heading>
+        <Box minW="100%" minH="40rem" maxH="40rem">
+          <SearchDisplay>
+            <LeftRightImageText
+              heading="Web Application Template"
+              subheading="PHP, JavaScript, MySQL, HTML, CSS"
+              nonTextContent={project2Content}
+              leftAligned={true}
+            >
+              <Text m="1rem">
+                This project was my first venture into backend technologies. The
+                project stemmed from my desire to add a feature to a 1st Year
+                Web Development assignment that was outside the scope of the
+                class.
+              </Text>
+              <Text m="1rem">
+                Through the use of primarily PHP and MySql, I created a
+                functioning web application capable of storing, sorting and
+                displaying user entered data in many different forms.
+              </Text>
+              <Text m="1rem">
+                The project was driven by my interest in and desire to learn
+                more about programming. It furthered my development skill
+                greatly and has provided me with a helpful codebase that
+                provides real-world examples of the use of different
+                technologies.
+              </Text>
+              <a href="https://github.com/rossmcel">
+                <Button bgColor="blue" color="white" fontSize="sm" ml="1rem">
+                  See the GitHub Repo{" "}
+                  <ExitToAppIcon style={{ marginLeft: "0.5rem" }} />
+                </Button>
+              </a>
+            </LeftRightImageText>
+            <LeftRightImageText
+              heading="Web Application Template"
+              subheading="PHP, JavaScript, MySQL, HTML, CSS"
+              nonTextContent={project2Content}
+              leftAligned={true}
+            >
+              <Text m="1rem">
+                This project was my first venture into backend technologies. The
+                project stemmed from my desire to add a feature to a 1st Year
+                Web Development assignment that was outside the scope of the
+                class.
+              </Text>
+              <Text m="1rem">
+                Through the use of primarily PHP and MySql, I created a
+                functioning web application capable of storing, sorting and
+                displaying user entered data in many different forms.
+              </Text>
+              <Text m="1rem">
+                The project was driven by my interest in and desire to learn
+                more about programming. It furthered my development skill
+                greatly and has provided me with a helpful codebase that
+                provides real-world examples of the use of different
+                technologies.
+              </Text>
+              <a href="https://github.com/rossmcel">
+                <Button bgColor="blue" color="white" fontSize="sm" ml="1rem">
+                  See the GitHub Repo{" "}
+                  <ExitToAppIcon style={{ marginLeft: "0.5rem" }} />
+                </Button>
+              </a>
+            </LeftRightImageText>
+          </SearchDisplay>
         </Box>
       )}
     </Box>
