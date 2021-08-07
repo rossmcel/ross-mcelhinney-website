@@ -87,6 +87,11 @@ export const ProjectsContainer: React.FC = () => {
         nonTextContent: project1Content,
         leftAligned: true,
         textContent: project1Text,
+        tags: [
+          { tagName: "React" },
+          { tagName: "JavaScript" },
+          { tagName: "TypeScript" },
+        ],
       },
       {
         projectHeading: "Web Application Template",
@@ -94,6 +99,13 @@ export const ProjectsContainer: React.FC = () => {
         nonTextContent: project2Content,
         leftAligned: false,
         textContent: project2Text,
+        tags: [
+          { tagName: "PHP" },
+          { tagName: "JavaScript" },
+          { tagName: "MySQL" },
+          { tagName: "HTML" },
+          { tagName: "CSS" },
+        ],
       },
     ],
   };
