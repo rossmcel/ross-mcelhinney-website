@@ -105,7 +105,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ projectData }) => {
               heading={projectData.projects[0].projectHeading}
               subheading={projectData.projects[0].projectSubHeading}
               nonTextContent={projectData.projects[0].nonTextContent}
-              leftAligned={projectData.projects[0].leftAligned}
+              leftAligned={true}
             >
               {projectData.projects[0].textContent}
             </LeftRightImageText>
@@ -113,7 +113,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ projectData }) => {
               heading={projectData.projects[1].projectHeading}
               subheading={projectData.projects[1].projectSubHeading}
               nonTextContent={projectData.projects[1].nonTextContent}
-              leftAligned={projectData.projects[1].leftAligned}
+              leftAligned={true}
             >
               {projectData.projects[1].textContent}
             </LeftRightImageText>
