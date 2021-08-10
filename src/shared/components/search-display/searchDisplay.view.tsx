@@ -45,7 +45,7 @@ export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
 
         return;
       case "remove-value":
-        // .splice 2nd parameter = 0 because .splice() returns an array with the deleted elements
+        // exact same process as 'select-option'
         setTags((tags) => tags.splice(0, 0));
 
         var keyName = "whatever";
