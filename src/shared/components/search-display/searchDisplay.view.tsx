@@ -5,10 +5,12 @@ import makeAnimated from "react-select/animated";
 
 interface SearchDisplayViewProps {
   children: React.ReactNode;
+  originalComponentTags: any;
 }
 
 export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
   children,
+  originalComponentTags,
 }) => {
   // List of selectable tags
   const options = [
@@ -71,6 +73,28 @@ export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
     }
   };
 
+  let display = new Array();
+  for (let i = 0; i < originalComponentTags.length; i++) {
+    console.log("Ind: " + originalComponentTags[i]);
+
+    for (let j = 0; j < originalComponentTags[i].tags.length; j++) {
+      console.log("Tags: " + originalComponentTags[i].tags[j].tagName);
+      if (tags.includes(originalComponentTags[i].tags[j].tagName)) {
+        display.push(i);
+        break;
+      }
+    }
+  }
+
+  console.log("Display: " + display);
+
+  const childrenArray = React.Children.toArray(children);
+  console.log("Children" + childrenArray);
+  let finalChildrenArray = new Array();
+  for (let i = 0; i < display.length; i++) {
+    finalChildrenArray.push(childrenArray[display[i]]);
+  }
+
   const animatedComponents = makeAnimated();
 
   return (
@@ -118,7 +142,7 @@ export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
         borderTop="1px solid lightgrey"
         overflow="scroll"
       >
-        {children}
+        {finalChildrenArray}
       </Box>
     </Flex>
   );

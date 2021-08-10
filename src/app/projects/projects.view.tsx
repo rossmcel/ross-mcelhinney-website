@@ -100,7 +100,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ projectData }) => {
         </Box>
       ) : (
         <Box minW="100%" minH="40rem" maxH="40rem">
-          <SearchDisplay>
+          <SearchDisplay originalComponentTags={projectData.projects}>
             <LeftRightImageText
               heading={projectData.projects[0].projectHeading}
               subheading={projectData.projects[0].projectSubHeading}
