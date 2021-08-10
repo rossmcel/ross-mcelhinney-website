@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { Box, BreadcrumbLink, Flex } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
-import { handleInputChange } from "react-select/src/utils";
-import { TagFacesSharp } from "@material-ui/icons";
 
 interface SearchDisplayViewProps {
   children: React.ReactNode;
@@ -12,37 +10,33 @@ interface SearchDisplayViewProps {
 export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
   children,
 }) => {
+  // List of selectable tags
   const options = [
     { value: "JavaScript", label: "JavaScript" },
     { value: "PHP", label: "PHP" },
     { value: "MySQL", label: "MySQL" },
   ];
 
-  //var tagsArr = new Array("JavaScript");
-
+  // current tags hook
   const [tags, setTags] = useState(["JavaScript"]);
 
-  const [isOpen, setIsOpen] = useState({});
-
+  // handle logic for actions made on the list of tags by the user (add new tag/remove tag/clear all tags ect.)
   const handleInputChange = (inputValue: any, { action }: any) => {
-    console.log("IV - " + inputValue);
-    console.log("IV - " + inputValue[0]);
-
-    //var keyNames = Object.keys(inputValue[0]);
-    //console.log(keyNames);
-
-    console.log("A - " + action);
+    // differentiate between different actions performed by the user on the 'Select' component
     switch (action) {
       case "input-change":
         return;
       case "select-option":
+        // completely clear the tags array
         // .splice 2nd parameter = 0 because .splice() returns an array with the deleted elements
         setTags((tags) => tags.splice(0, 0));
 
+        // find the property name of the inputValue object
         var keyName = "whatever";
         for (var name in inputValue[0]) {
           keyName = name;
         }
+        // loop through the inputValue array and add it to the tags array
         for (let i = 0; i < inputValue.length; i++) {
           console.log(inputValue[i][keyName]);
           setTags((tags) => tags.concat(inputValue[i][keyName]));
@@ -65,7 +59,9 @@ export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
         }
 
         return;
+      // If x on the right side of the 'Select' component is clicked
       case "clear":
+        // completely clear tags array
         setTags((tags) => tags.splice(0, 0));
         return;
       case "menu-close":
@@ -75,59 +71,7 @@ export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
     }
   };
 
-  const handleChange = (selectedOption: any) => {
-    //tagsArr.push(selectedOption[selectedOption.length - 1].value);
-
-    console.log("------" + selectedOption[selectedOption.length - 1].value);
-    if (isOpen == true) {
-      console.log("OOOPPPPEEEENNN");
-      if (tags.includes(selectedOption[selectedOption.length - 1].value)) {
-        console.log("INCLUDES");
-
-        let tempArr = new Array();
-        for (let k = 0; k < selectedOption.length; k++) {
-          tempArr.push(selectedOption[k].value);
-        }
-        console.log(tempArr);
-
-        for (let i = 0; i < tags.length; i++) {
-          if (tempArr.includes(tags[i])) {
-            console.log(tags[i]);
-            console.log("Yes");
-          } else {
-            console.log(tags[i]);
-            console.log("No");
-            setTags((tags) => tags.splice(i, 1));
-            console.log(tags);
-            break;
-          }
-          console.log("ffff" + tags);
-        }
-
-        console.log(tags);
-
-        /*let location = tags.indexOf(
-        selectedOption[selectedOption.length - 1].value
-      );
-      setTags((tags) => tags.splice(location, 1));*/
-      } else {
-        setTags((tags) =>
-          tags.concat(selectedOption[selectedOption.length - 1].value)
-        );
-      }
-    }
-
-    //console.log(`Option selected:`, selectedOption[0].value);
-    //console.log(selectedOption);
-    //console.log("Tags is: " + tagsArr[1]);
-  };
-
   const animatedComponents = makeAnimated();
-
-  //console.log("oooooo" + tags);
-  //const animatedComponents = makeAnimated();
-
-  //console.log("test ---- :::::: " + tags[1]);
 
   return (
     <Flex
