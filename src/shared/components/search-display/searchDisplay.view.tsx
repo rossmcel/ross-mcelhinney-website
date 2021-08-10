@@ -1,3 +1,49 @@
+/*
+**** How This Component Works ****
+
+The component takes 2 props - 'children' and 'originalComponentTags'
+  'children' prop - This prop acts like a typical 'children' prop, however each prop
+  is associated with a value in the Object that is passed in the 'originalComponentTags' prop.
+    For example: originalComponentTags[0] is associated with the 1st prop passed, 
+    originalComponentTags[1] is associated with the 2nd prop passed ect.
+    NOTE: Individual props are defined like so:
+      <Box>
+      </Box>
+      <Box>
+      </Box>
+      This is 2 props, however:
+      <Box>
+        <Box>
+        </Box>
+        <Box>
+        </Box>
+      </Box>
+      is one prop
+
+  'originalComponentTags' prop - This prop must be a JSON Object that is an array. It must have
+  a property called 'tags' in each array object that contains a list of tags under the name 'tagName'
+    For example: 
+    JSON_Array_Object_Name: [
+      {
+        tags: [
+          { tagName: "React" },
+          { tagName: "JavaScript" },
+          { tagName: "TypeScript" },
+        ],
+      },
+      {
+        tags: [
+          { tagName: "PHP" },
+          { tagName: "JavaScript" },
+          { tagName: "MySQL" },
+          { tagName: "HTML" },
+          { tagName: "CSS" },
+        ],
+      },
+    ],
+  
+  
+*/
 import React, { useState } from "react";
 import { Box, Flex } from "@chakra-ui/react";
 import Select from "react-select";
@@ -73,23 +119,23 @@ export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
     }
   };
 
+  // array to hold the children props that have tags matching the currently selected tags
   let display = new Array();
+  // loop through the tags of each of the children props
   for (let i = 0; i < originalComponentTags.length; i++) {
-    console.log("Ind: " + originalComponentTags[i]);
-
     for (let j = 0; j < originalComponentTags[i].tags.length; j++) {
-      console.log("Tags: " + originalComponentTags[i].tags[j].tagName);
+      // if any of this children prop's tags match the currently selected tags
       if (tags.includes(originalComponentTags[i].tags[j].tagName)) {
+        // add this children prop to the list of props to be displayed
         display.push(i);
         break;
       }
     }
   }
 
-  console.log("Display: " + display);
-
+  // seperate the children prop into individual props
   const childrenArray = React.Children.toArray(children);
-  console.log("Children" + childrenArray);
+  // array to hold the final list of individual children props to be displayed
   let finalChildrenArray = new Array();
   for (let i = 0; i < display.length; i++) {
     finalChildrenArray.push(childrenArray[display[i]]);
