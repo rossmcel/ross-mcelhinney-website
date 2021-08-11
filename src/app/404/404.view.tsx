@@ -1,3 +1,7 @@
+/* 
+404 Image comes from here: https://www.kapwing.com/404-illustrations
+*/
+
 import React from "react";
 import { Box, Center, Heading, Image, Text } from "@chakra-ui/react";
 import PageNotFoundImage from "../../404-image.png";
