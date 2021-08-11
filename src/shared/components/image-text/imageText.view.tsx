@@ -37,7 +37,7 @@ export const ImageTextView: React.FC<ImageTextViewProps> = ({
       </Flex>
       <Flex
         direction="column"
-        mt="1rem"
+        mt={{ base: "0rem", sm: "1rem" }}
         maxW={{ base: "none", md: "50%" }}
         textAlign={{ base: "justify", md: "left" }}
         paddingX={{ base: "2.5rem", sm: "4rem", md: "none" }}
@@ -50,6 +50,15 @@ export const ImageTextView: React.FC<ImageTextViewProps> = ({
           <Heading as="h1" size="lg" letterSpacing="-.1rem">
             {title}
           </Heading>
+        </Flex>
+        <Flex
+          minW="50%"
+          maxW="50%"
+          mb="1.5rem"
+          alignSelf="center"
+          display={{ base: "block", md: "none" }}
+        >
+          <Image src={image} borderRadius="30%" ml="auto" mr="auto" />
         </Flex>
         {/* Max amount of 2 blocks of text */}
         <Text fontSize="lg" textAlign="justify">

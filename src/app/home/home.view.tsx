@@ -12,21 +12,39 @@ import cssLogo from "../../cssLogo.png";
 export const Home: React.FC = () => {
   return (
     <Box overflow="hidden">
-      <ImageText
-        image="https://i.ibb.co/zsy29Dw/linkedin-Profile.jpg"
-        title="About Me"
-        titleImage="blank.png"
-        text1="Hello, my name is Ross McElhinney, welcome to my website!"
-        text2="I am a 20 year old Computer Science Student at Technological University Dublin, graduating in 2023"
-        buttonLink="mailto:rossmcelhinney123@gmail.com"
-        buttonText="Contact Me"
-        button2Link="https://github.com/rossmcel"
-        button2Text="GitHub"
-        button3Link="https://www.linkedin.com/in/ross-mcelhinney/"
-        button3Text="LinkedIn"
-      />
+      <Box
+        display={{ base: "block", sm: "initial" }}
+        width="98%"
+        ml="auto"
+        mr="auto"
+        mt="0.2rem"
+        border="1px solid lightgrey"
+        borderRadius="0.5rem"
+      >
+        <ImageText
+          image="https://i.ibb.co/zsy29Dw/linkedin-Profile.jpg"
+          title="About Me"
+          titleImage="blank.png"
+          text1="Hello, my name is Ross McElhinney, welcome to my website!"
+          text2="I am a 20 year old Computer Science Student at Technological University Dublin, graduating in 2023"
+          buttonLink="mailto:rossmcelhinney123@gmail.com"
+          buttonText="Contact Me"
+          button2Link="https://github.com/rossmcel"
+          button2Text="GitHub"
+          button3Link="https://www.linkedin.com/in/ross-mcelhinney/"
+          button3Text="LinkedIn"
+        />
+      </Box>
 
-      <Box>
+      <Box
+        display={{ base: "block", sm: "initial" }}
+        width="98%"
+        ml="auto"
+        mr="auto"
+        mt="0.2rem"
+        border="1px solid lightgrey"
+        borderRadius="0.5rem"
+      >
         <Center
           mt={{ base: "1.5rem", md: "5rem" }}
           mb={{ base: "1.5rem", md: "2rem" }}
