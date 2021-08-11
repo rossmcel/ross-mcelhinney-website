@@ -82,20 +82,20 @@ export const SliderCardView: React.FC<SliderCardViewProps> = ({
           </Heading>
           <Flex direction="row" mt={{ base: "2.5rem", sm: "1rem" }}>
             <Center>
-              <Box boxSize={{ base: "48px", sm: "64px" }}>
+              <Box boxSize={{ base: "40px", md: "48px", lg: "64px" }}>
                 <Image src={image1} />
               </Box>
-              <Box boxSize={{ base: "48px", sm: "64px" }}>
+              <Box boxSize={{ base: "40px", md: "48px", lg: "64px" }}>
                 <Image src={image2} />
               </Box>
             </Center>
           </Flex>
           <Flex direction="row">
             <Center>
-              <Box boxSize={{ base: "48px", sm: "64px" }}>
+              <Box boxSize={{ base: "40px", md: "48px", lg: "64px" }}>
                 <Image src={image3} />
               </Box>
-              <Box boxSize={{ base: "48px", sm: "64px" }}>
+              <Box boxSize={{ base: "40px", md: "48px", lg: "64px" }}>
                 <Image src={image4} />
               </Box>
             </Center>
