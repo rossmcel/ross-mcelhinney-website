@@ -21,12 +21,6 @@ export const NavigationView: React.FC = () => {
       color="black"
     >
       <Flex align="center" mr={5}>
-        <Box boxSize="32px" mr="0.8rem" mt="-0.7rem">
-          <NavLink to="/">
-            <Image src="https://i.ibb.co/KmbKCqs/blue-pin-point-icon-isolated-260nw-1709537368.jpg" />
-          </NavLink>
-        </Box>
-
         <NavLink to="/">
           <Heading as="h1" size="lg" letterSpacing="-.1rem">
             Ross McElhinney
