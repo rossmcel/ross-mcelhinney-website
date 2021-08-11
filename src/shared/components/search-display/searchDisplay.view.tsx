@@ -86,9 +86,7 @@ export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
         }
         // loop through the inputValue array and add it to the tags array
         for (let i = 0; i < inputValue.length; i++) {
-          console.log(inputValue[i][keyName]);
           setTags((tags) => tags.concat(inputValue[i][keyName]));
-          console.log(tags);
         }
 
         return;
@@ -101,9 +99,7 @@ export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
           keyName = name;
         }
         for (let i = 0; i < inputValue.length; i++) {
-          console.log(inputValue[i][keyName]);
           setTags((tags) => tags.concat(inputValue[i][keyName]));
-          console.log(tags);
         }
 
         return;
