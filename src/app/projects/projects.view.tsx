@@ -37,7 +37,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ projectData }) => {
   `;
 
   return (
-    <Box overflow="hidden" minH="130rem">
+    <Box overflow="hidden" minH="80rem">
       <Center
         mt={{ base: "1.5rem", md: "5rem" }}
         mb={{ base: "1.5rem", md: "2rem" }}

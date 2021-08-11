@@ -147,16 +147,15 @@ export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
       ml="auto"
       mr="auto"
       minH="40rem"
-      maxH="40rem"
+      maxH="46rem"
       border="1px solid lightgrey"
       borderRadius="0.5rem"
     >
-      <Box minW="100%" maxW="100%" minH="8rem" maxH="5rem">
+      <Box minW="100%" maxW="100%" minH="4rem" maxH="10rem" paddingY="1rem">
         <Flex direction="row" minW="72%" maxW="72%" ml="auto" mr="auto">
           <Flex
             minW="100%"
             maxW="100%"
-            mt="3rem"
             border="1px solid grey"
             borderRadius="0.5rem"
           >
@@ -172,17 +171,17 @@ export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
                 onChange={handleInputChange}
               />
             </Box>
-            {tags}
           </Flex>
         </Flex>
       </Box>
       <Box
         minW="100%"
         maxW="100%"
-        minH="35rem"
-        maxH="35rem"
+        minH="36rem"
+        maxH="42rem"
         borderTop="1px solid lightgrey"
         overflow="scroll"
+        paddingBottom="4rem"
       >
         {finalChildrenArray}
       </Box>
