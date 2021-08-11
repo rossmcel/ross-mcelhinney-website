@@ -28,18 +28,27 @@ export const SliderView: React.FC<SliderViewProps> = ({
       isPlaying={true}
     >
       <Center>
-        <Flex direction="row" minH="15rem">
-          <Box mr="5rem" mt="auto" mb="auto">
+        <Flex
+          direction="row"
+          minH={{ base: "28rem", md: "25rem", lg: "17rem" }}
+        >
+          <Box mr={{ sm: "2rem", md: "5rem" }} mt="auto" mb="auto">
             <ButtonBack>
               <ArrowBackIcon />
             </ButtonBack>
           </Box>
           <Slider>
-            <Box minW="50rem" minH="18rem" pt="1rem" textAlign="center">
+            <Box
+              minW={{ base: "20rem", sm: "25rem", md: "30rem", lg: "45rem" }}
+              mt="auto"
+              mb="auto"
+              pt="1rem"
+              textAlign="center"
+            >
               {children}
             </Box>
           </Slider>
-          <Box ml="5rem" mt="auto" mb="auto">
+          <Box ml={{ sm: "2rem", md: "5rem" }} mt="auto" mb="auto">
             <ButtonNext>
               <ArrowForwardIcon />
             </ButtonNext>

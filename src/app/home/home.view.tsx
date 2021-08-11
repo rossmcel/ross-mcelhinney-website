@@ -72,10 +72,7 @@ export const Home: React.FC = () => {
             image2="https://i.ibb.co/m9M2ZK2/react.png"
           />
         </Slider>
-        <Center
-          mt={{ base: "0.5rem", md: "-1rem" }}
-          mb={{ base: "0.5rem", md: "1rem" }}
-        >
+        <Center mt={{ lg: "-1rem" }} mb={{ base: "0.5rem", md: "1rem" }}>
           <a href="/Projects">
             <Button
               bg="lightgrey"
