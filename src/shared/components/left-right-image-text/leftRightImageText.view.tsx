@@ -30,12 +30,23 @@ export const LeftRightImageTextView: React.FC<LeftRightImageTextViewProps> = ({
           <Heading as="h3" size="lg" letterSpacing="-.1rem">
             {heading}
           </Heading>
+
           <Text color="grey" fontSize="lg">
             {subheading}
           </Text>
-          <Flex direction="row" mt="1rem" minW="100%" minH="100%">
+          <Flex
+            direction={{ base: "column", lg: "row" }}
+            mt="1rem"
+            minW="100%"
+            minH="100%"
+          >
             {nonTextContent}
-            <Box minW="60%" maxW="60%">
+            <Box
+              minW={{ base: "95%", lg: "60%" }}
+              maxW={{ base: "95%", lg: "60%" }}
+              ml={{ base: "auto", lg: "intial" }}
+              mr={{ base: "auto", lg: "intial" }}
+            >
               {children}
             </Box>
           </Flex>

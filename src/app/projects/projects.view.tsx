@@ -47,7 +47,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ projectData }) => {
         </Heading>
       </Center>
       <Center>
-        <Flex direction="column" maxW="40%">
+        <Flex direction="column" maxW={{ base: "80%", md: "40%" }}>
           <Text fontSize="lg" textAlign="center" mb="0.7rem">
             Here you can see projects that I have created
           </Text>
@@ -58,7 +58,12 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ projectData }) => {
           </Text>
         </Flex>
       </Center>
-      <Flex direction="column" ml="70%" mt="3rem" mb="3rem">
+      <Flex
+        direction="column"
+        ml={{ base: "auto", md: "70%" }}
+        mt="3rem"
+        mb="3rem"
+      >
         <Center mb="0.3rem">
           <Text fontWeight="bold">Layout Type</Text>
         </Center>

@@ -63,6 +63,8 @@ export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
     { value: "JavaScript", label: "JavaScript" },
     { value: "PHP", label: "PHP" },
     { value: "MySQL", label: "MySQL" },
+    { value: "Git", label: "Git" },
+    { value: "HTML", label: "HTML" },
   ];
 
   // current tags hook
@@ -142,43 +144,40 @@ export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
   return (
     <Flex
       direction="column"
-      minW="60%"
-      maxW="60%"
+      minW={{ base: "90%", sm: "60%" }}
+      maxW={{ base: "90%", sm: "60%" }}
       ml="auto"
       mr="auto"
-      minH="40rem"
-      maxH="46rem"
+      minH={{ base: "40rem", md: "40rem" }}
+      maxH={{ base: "42rem", md: "46rem" }}
       border="1px solid lightgrey"
       borderRadius="0.5rem"
     >
-      <Box minW="100%" maxW="100%" minH="4rem" maxH="10rem" paddingY="1rem">
-        <Flex direction="row" minW="72%" maxW="72%" ml="auto" mr="auto">
-          <Flex
-            minW="100%"
-            maxW="100%"
-            border="1px solid grey"
-            borderRadius="0.5rem"
-          >
-            <Box minW="100%">
-              <Select
-                closeMenuOnSelect={false}
-                components={animatedComponents}
-                defaultValue={options[0]}
-                isMulti
-                isClearable
-                options={options}
-                onInputChange={handleInputChange}
-                onChange={handleInputChange}
-              />
-            </Box>
-          </Flex>
-        </Flex>
-      </Box>
+      <Flex
+        minW="100%"
+        maxW="100%"
+        border="1px solid grey"
+        borderRadius="0.5rem"
+      >
+        <Box minW="100%">
+          <Select
+            closeMenuOnSelect={false}
+            components={animatedComponents}
+            defaultValue={options[0]}
+            isMulti
+            isClearable
+            options={options}
+            onInputChange={handleInputChange}
+            onChange={handleInputChange}
+          />
+        </Box>
+      </Flex>
+
       <Box
         minW="100%"
         maxW="100%"
         minH="36rem"
-        maxH="42rem"
+        maxH={{ md: "42rem" }}
         borderTop="1px solid lightgrey"
         overflow="scroll"
         paddingBottom="4rem"
