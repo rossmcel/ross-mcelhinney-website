@@ -35,7 +35,7 @@ export const ImageTextView: React.FC<ImageTextViewProps> = ({
       <Flex minW="30rem" maxW="50%" display={{ base: "none", md: "block" }}>
         <Image
           src={image}
-          ml={{ sm: "40%", lg: "45%" }}
+          ml={{ sm: "40%", lg: "34%" }}
           mt="15%"
           borderRadius="30%"
         />
@@ -46,7 +46,7 @@ export const ImageTextView: React.FC<ImageTextViewProps> = ({
         maxW={{ base: "none", md: "50%" }}
         textAlign={{ base: "justify", md: "left" }}
         paddingX={{ base: "2.5rem", sm: "4rem", md: "none" }}
-        ml={{ md: "-10%", lg: "initial" }}
+        ml={{ md: "-10%", lg: "-11%" }}
       >
         <Flex
           direction="row"
