@@ -31,9 +31,14 @@ export const ImageTextView: React.FC<ImageTextViewProps> = ({
   button3Text,
 }) => {
   return (
-    <Flex bg="transparent" color="black" maxW="60rem">
+    <Flex bg="transparent" color="black" maxW="60rem" ml="auto" mr="auto">
       <Flex minW="30rem" maxW="50%" display={{ base: "none", md: "block" }}>
-        <Image src={image} ml="45%" mt="15%" borderRadius="30%" />
+        <Image
+          src={image}
+          ml={{ sm: "40%", lg: "45%" }}
+          mt="15%"
+          borderRadius="30%"
+        />
       </Flex>
       <Flex
         direction="column"
@@ -41,6 +46,7 @@ export const ImageTextView: React.FC<ImageTextViewProps> = ({
         maxW={{ base: "none", md: "50%" }}
         textAlign={{ base: "justify", md: "left" }}
         paddingX={{ base: "2.5rem", sm: "4rem", md: "none" }}
+        ml={{ md: "-10%", lg: "initial" }}
       >
         <Flex
           direction="row"
