@@ -180,7 +180,7 @@ export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
         maxH={{ md: "42rem" }}
         borderTop="1px solid lightgrey"
         overflow="scroll"
-        paddingBottom="4rem"
+        paddingBottom="5rem"
       >
         {finalChildrenArray}
       </Box>

@@ -8,9 +8,9 @@ import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 
 export const ProjectsContainer: React.FC = () => {
   const project1Content = (
-    <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
+    <Box>
       <LaptopDisplay screenImage={HomePageRecording} />
-    </ScrollAnimation>
+    </Box>
   );
 
   const project1Text = (
@@ -49,9 +49,9 @@ export const ProjectsContainer: React.FC = () => {
   );
 
   const project2Content = (
-    <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={5}>
+    <Box>
       <LaptopDisplay screenImage={HomePageRecording} />
-    </ScrollAnimation>
+    </Box>
   );
 
   const project2Text = (
