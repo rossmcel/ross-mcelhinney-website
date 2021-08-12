@@ -33,7 +33,7 @@ export const SliderView: React.FC<SliderViewProps> = ({
           minH={{ base: "28rem", md: "25rem", lg: "17rem" }}
         >
           <Box
-            mr={{ base: "0.3rem", sm: "2rem", md: "5rem" }}
+            mr={{ base: "-1rem", sm: "2rem", md: "5rem" }}
             mt="auto"
             mb="auto"
           >
@@ -53,7 +53,7 @@ export const SliderView: React.FC<SliderViewProps> = ({
             </Box>
           </Slider>
           <Box
-            ml={{ base: "0.5rem", sm: "2rem", md: "5rem" }}
+            ml={{ base: "-1rem", sm: "2rem", md: "5rem" }}
             mt="auto"
             mb="auto"
           >
