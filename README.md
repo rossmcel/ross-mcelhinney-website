@@ -11,6 +11,6 @@ Made during Summer 2021
   <img src="https://user-images.githubusercontent.com/56897582/129221055-6208fee6-f944-48ac-9219-e1f32038474c.PNG" title="Full Screen">
 </p>
 <h4>Mobile Screen</h4>
-<p style="text-align: center; margin-top: 3vh;  margin-left: 35vw; width=30vw">
+<p style="text-align: center; margin-top: 3vh;  margin-left: 35vw; width=10vw">
   <img src="https://user-images.githubusercontent.com/56897582/129221811-b7754513-be15-4f14-bb6d-d48644004f56.jpg" title="Mobile Screen">
 </p>
