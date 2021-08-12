@@ -1,6 +1,6 @@
 # Ross McElhinney Personal Website
 
-Created [https://rossmcelhinney.com](rossmcelhinney.com), a website intended to display my professional information, created during Summer 2021
+Created [rossmcelhinney.com](https://rossmcelhinney.com), a website intended to display my professional information, created during Summer 2021
 
 ## Home Page
 
