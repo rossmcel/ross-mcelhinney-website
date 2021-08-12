@@ -83,11 +83,12 @@ export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
 
         // find the property name of the inputValue object
         var keyName = "whatever";
-        for (var name in inputValue[0]) {
+        for (let name in inputValue[0]) {
           keyName = name;
         }
         // loop through the inputValue array and add it to the tags array
         for (let i = 0; i < inputValue.length; i++) {
+          // eslint-disable-next-line
           setTags((tags) => tags.concat(inputValue[i][keyName]));
         }
 
@@ -96,8 +97,7 @@ export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
         // exact same process as 'select-option'
         setTags((tags) => tags.splice(0, 0));
 
-        var keyName = "whatever";
-        for (var name in inputValue[0]) {
+        for (let name in inputValue[0]) {
           keyName = name;
         }
         for (let i = 0; i < inputValue.length; i++) {
@@ -118,7 +118,7 @@ export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
   };
 
   // array to hold the children props that have tags matching the currently selected tags
-  let display = new Array();
+  let display = [];
   // loop through the tags of each of the children props
   for (let i = 0; i < originalComponentTags.length; i++) {
     for (let j = 0; j < originalComponentTags[i].tags.length; j++) {
@@ -134,7 +134,7 @@ export const SearchDisplayView: React.FC<SearchDisplayViewProps> = ({
   // seperate the children prop into individual props
   const childrenArray = React.Children.toArray(children);
   // array to hold the final list of individual children props to be displayed
-  let finalChildrenArray = new Array();
+  let finalChildrenArray = [];
   for (let i = 0; i < display.length; i++) {
     finalChildrenArray.push(childrenArray[display[i]]);
   }
