@@ -40,12 +40,11 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ projectData }) => {
     <Box overflow="hidden" minH="80rem">
       <Box
         display={{ base: "block", sm: "initial" }}
-        width="98%"
+        width="90%"
         ml="auto"
         mr="auto"
         mt="0.2rem"
-        border="1px solid lightgrey"
-        borderRadius="0.5rem"
+        borderBottom="1px solid lightgrey"
         paddingBottom="2rem"
       >
         <Center
@@ -61,7 +60,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ projectData }) => {
             <Text fontSize="lg" textAlign="center" mb="0.7rem">
               Here you can see projects that I have created
             </Text>
-            <Text fontSize="lg" textAlign="justify">
+            <Text fontSize="lg" textAlign={{ base: "justify", sm: "justify" }}>
               My aim with these projects is to both improve and expand my
               programming skills & to provide solutions to interesting problems
               I have come across in the world
@@ -76,8 +75,6 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ projectData }) => {
         ml="auto"
         mr="auto"
         mt="0.2rem"
-        border="1px solid lightgrey"
-        borderRadius="0.5rem"
         paddingBottom="2rem"
       >
         <Flex
