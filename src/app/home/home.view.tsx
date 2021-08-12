@@ -50,7 +50,7 @@ export const Home: React.FC = () => {
           mb={{ base: "1.5rem", md: "2rem" }}
         >
           <Heading as="h3" size="lg" letterSpacing="-.1rem">
-            My Projects
+            My Projects T
           </Heading>
         </Center>
         <Slider totalSlides={3}>
