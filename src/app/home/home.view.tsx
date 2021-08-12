@@ -51,13 +51,13 @@ export const Home: React.FC = () => {
             My Projects
           </Heading>
         </Center>
-        <Slider totalSlides={3}>
+        <Slider totalSlides={2}>
           <SliderCard
             index={0}
             title="Personal Website"
             date="Summer 2021"
             text="Created rossmcelhinney.com, intended to display my professional information. Made with React JS"
-            buttonLink="#whatever"
+            buttonLink="https://github.com/rossmcel/ross-mcelhinney-website"
             buttonText="See More"
             imagesTitle="Tech"
             image1="https://i.ibb.co/7YyXpYV/javasript.png"
@@ -68,24 +68,13 @@ export const Home: React.FC = () => {
             title="PHP Web Application Template"
             date="15/3/2021"
             text="A functioning web application primarily built with PHP as well as other technologies such as MySql, JS, HTML & CSS"
-            buttonLink="#whatever"
+            buttonLink="https://github.com/rossmcel/WebAppTemplate"
             buttonText="See More"
             imagesTitle="Tech"
             image1={phpLogo}
             image2={cssLogo}
             image3={MySQLLogo}
             image4={htmlLogo}
-          />
-          <SliderCard
-            index={2}
-            title="Web Dev Workshop"
-            date="15/3/2021"
-            text="Lorem ipsum......"
-            buttonLink="#whatever"
-            buttonText="See More"
-            imagesTitle="Tech"
-            image1="https://i.ibb.co/7YyXpYV/javasript.png"
-            image2="https://i.ibb.co/m9M2ZK2/react.png"
           />
         </Slider>
         <Center mt={{ lg: "-1rem" }} mb={{ base: "0.5rem", md: "1rem" }}>

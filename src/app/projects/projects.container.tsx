@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Center, Heading, Text, Flex, Button } from "@chakra-ui/react";
 import ProjectsView from "./projects.view";
-import ScrollAnimation from "react-animate-on-scroll";
+import { NavLink } from "react-router-dom";
 import HomePageRecording from "../../homePageRecordingMid.gif";
 import { LaptopDisplay } from "../../shared/components/device-displays/laptop-display";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
@@ -29,9 +29,9 @@ export const ProjectsContainer: React.FC = () => {
         what I could do through applying creative solutions to challenging
         problems. Such a problem was the creation of the interactive email,
         phone, and LinkedIn Icons seen on the{" "}
-        <a href="/contact" style={{ color: "blue" }}>
+        <NavLink exact to="/Contact" style={{ color: "blue" }}>
           Contact Me
-        </a>{" "}
+        </NavLink>{" "}
         page. By creating these icons, I discovered a lot about animation in
         React as well as about the extensive amount of helpful npm packages.
       </Text>
@@ -40,7 +40,7 @@ export const ProjectsContainer: React.FC = () => {
         mind through the use of readable and structured code, effective
         seperation of components, strong documentation and my use of Git.
       </Text>
-      <a href="https://github.com/rossmcel">
+      <a href="https://github.com/rossmcel/ross-mcelhinney-website">
         <Button bgColor="blue" color="white" fontSize="sm" ml="1rem">
           See the GitHub Repo <ExitToAppIcon style={{ marginLeft: "0.5rem" }} />
         </Button>
@@ -72,7 +72,7 @@ export const ProjectsContainer: React.FC = () => {
         me with a helpful codebase that provides real-world examples of the use
         of different technologies.
       </Text>
-      <a href="https://github.com/rossmcel">
+      <a href="https://github.com/rossmcel/WebAppTemplate">
         <Button bgColor="blue" color="white" fontSize="sm" ml="1rem">
           See the GitHub Repo <ExitToAppIcon style={{ marginLeft: "0.5rem" }} />
         </Button>
