@@ -15,12 +15,11 @@ export const Home: React.FC = () => {
     <Box overflow="hidden">
       <Box
         display={{ base: "block", sm: "initial" }}
-        width="98%"
+        width="80%"
         ml="auto"
         mr="auto"
         mt="0.2rem"
-        border="1px solid lightgrey"
-        borderRadius="0.5rem"
+        borderBottom="1px solid lightgrey"
       >
         <ImageText
           image="https://i.ibb.co/zsy29Dw/linkedin-Profile.jpg"
@@ -39,19 +38,17 @@ export const Home: React.FC = () => {
 
       <Box
         display={{ base: "block", sm: "initial" }}
-        width="98%"
+        width="80%"
         ml="auto"
         mr="auto"
         mt="0.2rem"
-        border="1px solid lightgrey"
-        borderRadius="0.5rem"
       >
         <Center
           mt={{ base: "1.5rem", md: "5rem" }}
           mb={{ base: "1.5rem", md: "2rem" }}
         >
           <Heading as="h3" size="lg" letterSpacing="-.1rem">
-            My Projects T
+            My Projects
           </Heading>
         </Center>
         <Slider totalSlides={3}>

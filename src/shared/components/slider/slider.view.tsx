@@ -32,7 +32,11 @@ export const SliderView: React.FC<SliderViewProps> = ({
           direction="row"
           minH={{ base: "28rem", md: "25rem", lg: "17rem" }}
         >
-          <Box mr={{ sm: "2rem", md: "5rem" }} mt="auto" mb="auto">
+          <Box
+            mr={{ base: "0.3rem", sm: "2rem", md: "5rem" }}
+            mt="auto"
+            mb="auto"
+          >
             <ButtonBack>
               <ArrowBackIcon />
             </ButtonBack>
@@ -48,7 +52,11 @@ export const SliderView: React.FC<SliderViewProps> = ({
               {children}
             </Box>
           </Slider>
-          <Box ml={{ sm: "2rem", md: "5rem" }} mt="auto" mb="auto">
+          <Box
+            ml={{ base: "0.5rem", sm: "2rem", md: "5rem" }}
+            mt="auto"
+            mb="auto"
+          >
             <ButtonNext>
               <ArrowForwardIcon />
             </ButtonNext>
