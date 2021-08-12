@@ -10,8 +10,7 @@ export const AnimatedEmailIconView: React.FC = () => {
   const value = "rossmcelhinney123@gmail.com";
   const [copied, setCopied] = useState(false);
 
-  const [{ y, backgroundColor, marginTop, color }, set] = useSpring(() => ({
-    y: 100,
+  const [{ backgroundColor, marginTop, color }, set] = useSpring(() => ({
     backgroundColor: "white",
     marginTop: "14rem",
     color: "white",
@@ -20,7 +19,6 @@ export const AnimatedEmailIconView: React.FC = () => {
     <button
       onMouseEnter={() =>
         set({
-          y: 0,
           backgroundColor: "#90f5cf",
           marginTop: "9rem",
           color: "black",
@@ -28,7 +26,6 @@ export const AnimatedEmailIconView: React.FC = () => {
       }
       onMouseLeave={() =>
         set({
-          y: 100,
           backgroundColor: "white",
           marginTop: "14rem",
           color: "white",

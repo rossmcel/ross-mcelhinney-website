@@ -11,7 +11,6 @@ export const AnimatedPhoneIconView: React.FC = () => {
   const [copied, setCopied] = useState(false);
   const [
     {
-      y,
       backgroundColor1,
       backgroundColor2,
       backgroundColor3,
@@ -24,7 +23,6 @@ export const AnimatedPhoneIconView: React.FC = () => {
     },
     set,
   ] = useSpring(() => ({
-    y: 100,
     backgroundColor1: "white",
     backgroundColor2: "white",
     backgroundColor3: "white",
@@ -39,7 +37,6 @@ export const AnimatedPhoneIconView: React.FC = () => {
     <button
       onMouseEnter={() =>
         set({
-          y: 0,
           backgroundColor1: "lightblue",
           backgroundColor2: "lightblue",
           backgroundColor3: "#77fc9d",
@@ -53,7 +50,6 @@ export const AnimatedPhoneIconView: React.FC = () => {
       }
       onMouseLeave={() =>
         set({
-          y: 100,
           backgroundColor1: "white",
           backgroundColor2: "white",
           backgroundColor3: "white",

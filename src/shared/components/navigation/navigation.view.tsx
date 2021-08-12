@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, Flex, Image } from "@chakra-ui/react";
+import { Box, Heading, Flex } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import { MenuItems } from "./menu-items.view";
 

@@ -1,19 +1,18 @@
 import React from "react";
-import { Heading, Flex, Box } from "@chakra-ui/react";
+import { Heading, Flex } from "@chakra-ui/react";
 import { useSpring, animated } from "react-spring";
 import ExitToAppOutlinedIcon from "@material-ui/icons/ExitToAppOutlined";
 import Tooltip from "@material-ui/core/Tooltip";
 
 export const AnimatedLinkedinIconView: React.FC = () => {
-  const [{ y, marginTop, color }, set] = useSpring(() => ({
-    y: 100,
+  const [{ marginTop, color }, set] = useSpring(() => ({
     marginTop: "2rem",
     color: "white",
   }));
   return (
     <button
-      onMouseEnter={() => set({ y: 0, marginTop: "0rem", color: "black" })}
-      onMouseLeave={() => set({ y: 100, marginTop: "2rem", color: "white" })}
+      onMouseEnter={() => set({ marginTop: "0rem", color: "black" })}
+      onMouseLeave={() => set({ marginTop: "2rem", color: "white" })}
     >
       <Flex
         direction="column"
