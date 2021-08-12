@@ -1,13 +1,9 @@
 import React, { useState } from "react";
-import { Box, Center, Heading, Text, Flex, Button } from "@chakra-ui/react";
+import { Box, Center, Heading, Text, Flex } from "@chakra-ui/react";
 import { LeftRightImageText } from "../../shared/components/left-right-image-text";
 import AppsIcon from "@material-ui/icons/Apps";
 import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
 import Tooltip from "@material-ui/core/Tooltip";
-import ScrollAnimation from "react-animate-on-scroll";
-import HomePageRecording from "../../homePageRecordingMid.gif";
-import { LaptopDisplay } from "../../shared/components/device-displays/laptop-display";
-import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import { SearchDisplay } from "../../shared/components/search-display";
 
 interface ProjectsViewProps {
@@ -15,26 +11,12 @@ interface ProjectsViewProps {
 }
 export const ProjectsView: React.FC<ProjectsViewProps> = ({ projectData }) => {
   const handleChangeAll = () => {
-    setViewDefaultToggled(false);
     setViewAllToggled(true);
   };
   const handleChangeDefault = () => {
-    setViewDefaultToggled(true);
     setViewAllToggled(false);
   };
-  const [toggleViewDefault, setViewDefaultToggled] = useState(true);
   const [toggleViewAll, setViewAllToggled] = useState(false);
-  const codeString = `
-  import { render, screen } from '@testing-library/react';
-  import App from './App';
-
-  test('renders learn react link', () => {
-    render(<App />);
-    const linkElement = screen.getByText(/learn react/i);
-    expect(linkElement).toBeInTheDocument();
-  });
-
-  `;
 
   return (
     <Box overflow="hidden" minH="80rem">
