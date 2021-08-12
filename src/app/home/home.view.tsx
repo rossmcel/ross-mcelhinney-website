@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Center, Heading, Button, Text } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 import { ImageText } from "../../shared/components/image-text";
 import { Slider } from "../../shared/components/slider";
 import { SliderCard } from "../../shared/components/slider-card";
@@ -91,7 +92,7 @@ export const Home: React.FC = () => {
           />
         </Slider>
         <Center mt={{ lg: "-1rem" }} mb={{ base: "0.5rem", md: "1rem" }}>
-          <a href="/Projects">
+          <NavLink exact to="/Projects">
             <Button
               bg="lightgrey"
               color="black"
@@ -100,7 +101,7 @@ export const Home: React.FC = () => {
             >
               <Text mr="0.2rem">See All</Text> <ArrowRightAltIcon />
             </Button>
-          </a>
+          </NavLink>
         </Center>
       </Box>
     </Box>
