@@ -12,5 +12,5 @@ Made during Summer 2021
 </p>
 <h4>Mobile Screen</h4>
 <p style="text-align: center; margin-top: 3vh;  margin-left: 35vw; width=10vw">
-  <img src="https://user-images.githubusercontent.com/56897582/129221811-b7754513-be15-4f14-bb6d-d48644004f56.jpg" title="Mobile Screen">
+  <img src="https://user-images.githubusercontent.com/56897582/129223686-5b04731b-9486-4a2a-8479-2151aa869422.PNG" title="Mobile Screen">
 </p>
