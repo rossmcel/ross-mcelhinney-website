@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Center, Heading, Text, Flex, Button } from "@chakra-ui/react";
+import { Box, Text, Button } from "@chakra-ui/react";
 import ProjectsView from "./projects.view";
 import { NavLink } from "react-router-dom";
 import HomePageRecording from "../../homePageRecordingMid.gif";
