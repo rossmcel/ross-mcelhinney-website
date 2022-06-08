@@ -22,11 +22,11 @@ export const Home: React.FC = () => {
         borderBottom="1px solid lightgrey"
       >
         <ImageText
-          image="https://i.ibb.co/XZ9m8Lw/profile-Picture2022-Zoomed-In.jpg"
+          image="https://i.ibb.co/0Ff7tZ8/profile-Picture2022-Zoomed-In.jpg"
           title="About Me"
           titleImage="blank.png"
           text1="Hello, my name is Ross McElhinney, welcome to my website!"
-          text2="I am a 20 year old Computer Science Student at Technological University Dublin, graduating in 2023"
+          text2="I am a 21 year old Computer Science Student at Technological University Dublin, graduating in 2023"
           buttonLink="mailto:rossmcelhinney123@gmail.com"
           buttonText="Contact Me"
           button2Link="https://github.com/rossmcel"
