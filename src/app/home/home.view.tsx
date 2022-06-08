@@ -22,7 +22,7 @@ export const Home: React.FC = () => {
         borderBottom="1px solid lightgrey"
       >
         <ImageText
-          image="https://i.ibb.co/zsy29Dw/linkedin-Profile.jpg"
+          image="https://i.ibb.co/XZ9m8Lw/profile-Picture2022-Zoomed-In.jpg"
           title="About Me"
           titleImage="blank.png"
           text1="Hello, my name is Ross McElhinney, welcome to my website!"
