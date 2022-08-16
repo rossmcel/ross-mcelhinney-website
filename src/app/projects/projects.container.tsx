@@ -38,7 +38,7 @@ export const ProjectsContainer: React.FC = () => {
       <Text m="1rem">
         Although this was not a group project, I developed with collaboration in
         mind through the use of readable and structured code, effective
-        seperation of components, strong documentation and my use of Git.
+        separation of components, strong documentation and my use of Git.
       </Text>
       <a href="https://github.com/rossmcel/ross-mcelhinney-website">
         <Button bgColor="blue" color="white" fontSize="sm" ml="1rem">
@@ -62,13 +62,13 @@ export const ProjectsContainer: React.FC = () => {
         assignment that was outside the scope of the class.
       </Text>
       <Text m="1rem">
-        Through the use of primarily PHP and MySql, I created a functioning web
+        Through the use of primarily PHP and MySql, I created a functional web
         application capable of storing, sorting and displaying user entered data
         in many different forms.
       </Text>
       <Text m="1rem">
         The project was driven by my interest in and desire to learn more about
-        programming. It furthered my development skill greatly and has provided
+        programming. It furthered my development skills greatly and has provided
         me with a helpful codebase that provides real-world examples of the use
         of different technologies.
       </Text>
