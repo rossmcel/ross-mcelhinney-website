@@ -67,7 +67,7 @@ export const Home: React.FC = () => {
             index={1}
             title="PHP Web Application Template"
             date="15/3/2021"
-            text="A functioning web application primarily built with PHP as well as other technologies such as MySql, JS, HTML & CSS"
+            text="A functional web application primarily built with PHP as well as other technologies such as MySql, JS, HTML & CSS"
             buttonLink="https://github.com/rossmcel/WebAppTemplate"
             buttonText="See More"
             imagesTitle="Tech"
