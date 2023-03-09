@@ -26,7 +26,7 @@ export const Home: React.FC = () => {
           title="About Me"
           titleImage="blank.png"
           text1="Hello, my name is Ross McElhinney, welcome to my website!"
-          text2="I am a 21 year old Computer Science Student at Technological University Dublin, graduating in 2023"
+          text2="I am a 22 year old final year Computer Science Student at Technological University Dublin, graduating in 2023."
           buttonLink="mailto:rossmcelhinney123@gmail.com"
           buttonText="Contact Me"
           button2Link="https://github.com/rossmcel"
